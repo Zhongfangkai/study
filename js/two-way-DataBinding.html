@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input type="text" id="test">
+<b id="b"> 双向绑定数据 封装测试 </b> <i></i></br>
+
+<p><a href="#none"></a></p>
+<p><a href="#none"></a></p>
+<p><a href="#none"></a></p>
+
+<!--<script src="yunlutong/script/jquery-3.2.1.min.js"></script>-->
+<script>
+    /*双向绑定 封装函数*/
+    /*function towDataBind(input,view,init,enterBack,event) {
+        var obj = {},key = 'key',input = input.nodeName=='INPUT' ? input : document.querySelector(input+'');
+        if(input.nodeName!=='INPUT'){
+            console.error('input nodeName is not input');
+            return false;}
+        Object.defineProperty(obj,key,{
+            get:function () {
+                return input.value;
+            } ,
+            set:function (newval) {
+                input.value = newval;
+                if(view.length){
+                    for(var i=0,len=view.length;i<len;i++){
+                        view[i].innerText = newval;
+                    }
+                }else{
+                    view.innerText = newval;
+                }
+            },
+            enumerable:true,
+            configurable:true
+        });
+        obj[key] = init != undefined ? init : '';
+        input.addEventListener(event||'keyup',function (e){
+            obj[key] = e.target.value;
+            obj[key] != '' && typeof enterBack == 'function' && (enterBack(e));
+        });
+        return Object.getOwnPropertyDescriptor(obj,key);
+    }*/
+    var view = document.querySelectorAll('a');
+    //view[3] = document.querySelector('i');
+    console.log(view);
+    var o = towDataBind('#test',view,'双向',function (e) {
+        if(e.keyCode==13){ console.log(o.get());console.log(e);o.set('你按了回车键');}
+    });
+    /*双向绑定 封装函数*/
+    function towDataBind(input,view,init,enterBack,event) {
+        var obj = {},key = 'key',
+            input = input.nodeName=='INPUT' ? input : document.querySelector(input+''),
+            view = typeof view == 'string' ? document.querySelectorAll(view) : view ;
+        if(input.nodeName!=='INPUT'){return console.error('input nodeName is not input');}
+        Object.defineProperty(obj,key,{
+            get:function () {
+                return input.value;
+            } ,
+            set:function (newval) {
+                input.value = newval;
+                if(view.length){
+                    for(var i=0,len=view.length;i<len;i++){
+                        view[i].innerText = newval;
+                    }
+                }else{
+                    view.innerText = newval;
+                }
+            },
+            enumerable:true,
+            configurable:true
+        });
+        obj[key] = init != undefined ? init : '';
+        input.addEventListener(event||'keyup',function (e){
+            obj[key] = e.target.value;
+            obj[key] != '' && typeof enterBack == 'function' && (enterBack(e));
+        });
+        return Object.getOwnPropertyDescriptor(obj,key);
+    }
+</script>
+</body>
+</html>
