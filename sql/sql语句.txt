@@ -1,135 +1,161 @@
-´´½¨Êı¾İ¿â
-´´½¨Ö®Ç°ÅĞ¶Ï¸ÃÊı¾İ¿âÊÇ·ñ´æÔÚ
+åˆ›å»ºæ•°æ®åº“
+åˆ›å»ºä¹‹å‰åˆ¤æ–­è¯¥æ•°æ®åº“æ˜¯å¦å­˜åœ¨
 if exists (select * from sysdatabases where name='databaseName')
 drop database databaseName
 go
 Create DATABASE databasename
-on primary-- Ä¬ÈÏ¾ÍÊôÓÚprimaryÎÄ¼ş×é,¿ÉÊ¡ÂÔ
-£¨
-/*--Êı¾İÎÄ¼şµÄ¾ßÌåÃèÊö--*/
-name=¡®databasename_data¡¯£¬-- Ö÷Êı¾İÎÄ¼şµÄÂß¼­Ãû³Æ
-filename=¡®'Ëù´æÎ»ÖÃ£º\databasename_data.mdf¡¯£¬ -- Ö÷Êı¾İÎÄ¼şµÄÎïÀíÃû³Æ
-size=ÊıÖµmb, --Ö÷Êı¾İÎÄ¼şµÄ³õÊ¼´óĞ¡
-maxsize=ÊıÖµmb, -- Ö÷Êı¾İÎÄ¼şÔö³¤µÄ×î´óÖµ
-filegrowth=ÊıÖµ%--Ö÷Êı¾İÎÄ¼şµÄÔö³¤ÂÊ
-£©
+on primary-- é»˜è®¤å°±å±äºprimaryæ–‡ä»¶ç»„,å¯çœç•¥
+ï¼ˆ
+/*--æ•°æ®æ–‡ä»¶çš„å…·ä½“æè¿°--*/
+name=â€˜databasename_dataâ€™ï¼Œ-- ä¸»æ•°æ®æ–‡ä»¶çš„é€»è¾‘åç§°
+filename=â€˜'æ‰€å­˜ä½ç½®ï¼š\databasename_data.mdfâ€™ï¼Œ -- ä¸»æ•°æ®æ–‡ä»¶çš„ç‰©ç†åç§°
+size=æ•°å€¼mb, --ä¸»æ•°æ®æ–‡ä»¶çš„åˆå§‹å¤§å°
+maxsize=æ•°å€¼mb, -- ä¸»æ•°æ®æ–‡ä»¶å¢é•¿çš„æœ€å¤§å€¼
+filegrowth=æ•°å€¼%--ä¸»æ•°æ®æ–‡ä»¶çš„å¢é•¿ç‡
+ï¼‰
 log on
-£¨
-/*--ÈÕÖ¾ÎÄ¼şµÄ¾ßÌåÃèÊö,¸÷²ÎÊıº¬ÒåÍ¬ÉÏ--*/
-name='databasename_log', -- ÈÕÖ¾ÎÄ¼şµÄÂß¼­Ãû³Æ
-filename='Ëù´æÄ¿Â¼:\databasename_log.ldf', -- ÈÕÖ¾ÎÄ¼şµÄÎïÀíÃû³Æ
-size=ÊıÖµmb, --ÈÕÖ¾ÎÄ¼şµÄ³õÊ¼´óĞ¡
-filegrowth=ÊıÖµ%--ÈÕÖ¾ÎÄ¼şµÄÔö³¤Öµ
-£©
-É¾³ıÊı¾İ¿â
+ï¼ˆ
+/*--æ—¥å¿—æ–‡ä»¶çš„å…·ä½“æè¿°,å„å‚æ•°å«ä¹‰åŒä¸Š--*/
+name='databasename_log', -- æ—¥å¿—æ–‡ä»¶çš„é€»è¾‘åç§°
+filename='æ‰€å­˜ç›®å½•:\databasename_log.ldf', -- æ—¥å¿—æ–‡ä»¶çš„ç‰©ç†åç§°
+size=æ•°å€¼mb, --æ—¥å¿—æ–‡ä»¶çš„åˆå§‹å¤§å°
+filegrowth=æ•°å€¼%--æ—¥å¿—æ–‡ä»¶çš„å¢é•¿å€¼
+ï¼‰
+
+åˆ é™¤æ•°æ®åº“
 drop database databasename
-±¸·İ
---- ´´½¨±¸·İÊı¾İµÄ device
+
+å¤‡ä»½
+--- åˆ›å»ºå¤‡ä»½æ•°æ®çš„ device
 USE master
 EXEC sp_addumpdevice 'disk', 'testBack', 'c:\mssql7backup\MyNwind_1.dat'
---- ¿ªÊ¼±¸·İ
+--- å¼€å§‹å¤‡ä»½
+
 BACKUP DATABASE pubs TO testBack
-´´½¨ĞÂ±í
-create table tabname(col1 type1 [not null] [primary key] identity(ÆğÊ¼Öµ,µİÔöÁ¿)
-,col2 type2 [not null],..)--primary keyÎªÖ÷¼ü identity±íÊ¾µİÔöÊıÁ¿
-¸ù¾İÒÑÓĞµÄ±í´´½¨ĞÂ±í£º
-A£ºgo
-use Ô­Êı¾İ¿âÃû
+åˆ›å»ºæ–°è¡¨
+create table tabname(col1 type1 [not null] [primary key] identity(èµ·å§‹å€¼,é€’å¢é‡)
+,col2 type2 [not null],..)--primary keyä¸ºä¸»é”® identityè¡¨ç¤ºé€’å¢æ•°é‡
+æ ¹æ®å·²æœ‰çš„è¡¨åˆ›å»ºæ–°è¡¨ï¼š
+Aï¼šgo
+use åŸæ•°æ®åº“å
 go
-select * into Ä¿µÄÊı¾İ¿âÃû.dbo.Ä¿µÄ±íÃû from Ô­±íÃû(Ê¹ÓÃ¾É±í´´½¨ĞÂ±í)
-B£ºcreate table tab_new as select col1,col2¡­ from tab_old definition only
-´´½¨ĞòÁĞ
+select * into ç›®çš„æ•°æ®åº“å.dbo.ç›®çš„è¡¨å from åŸè¡¨å(ä½¿ç”¨æ—§è¡¨åˆ›å»ºæ–°è¡¨)
+Bï¼šcreate table tab_new as select col1,col2â€¦ from tab_old definition only
+åˆ›å»ºåºåˆ—
 create sequence SIMON_SEQUENCE
-minvalue 1 -- ×îĞ¡Öµ
-maxvalue 999999999999999999999999999 -- ×î´óÖµ
-start with 1 -- ¿ªÊ¼Öµ
-increment by 1 -- Ã¿´Î¼Ó¼¸
+minvalue 1 -- æœ€å°å€¼
+maxvalue 999999999999999999999999999 -- æœ€å¤§å€¼
+start with 1 -- å¼€å§‹å€¼
+increment by 1 -- æ¯æ¬¡åŠ å‡ 
 cache 20;
-É¾³ı±í
-drop table tabname--ÕâÊÇ½«±íÁ¬Í¬±íÖĞĞÅÏ¢Ò»ÆğÉ¾³ıµ«ÊÇÈÕÖ¾ÎÄ¼şÖĞ»áÓĞ¼ÇÂ¼
-É¾³ıĞÅÏ¢
-delete from table_name-ÕâÊÇ½«±íÖĞĞÅÏ¢É¾³ıµ«ÊÇ»á±£ÁôÕâ¸ö±í
-Ôö¼ÓÁĞ
-Alter table table_name add column_name column_type [default Ä¬ÈÏÖµ]--ÔÚ±íÖĞÔö¼ÓÒ»ÁĞ£¬[]ÄÚµÄÄÚÈİÎª¿ÉÑ¡Ïî
-É¾³ıÁĞ
-Alter table table_name drop column column_name--´Ó±íÖĞÉ¾³ıÒ»ÁĞ
-Ìí¼ÓÖ÷¼ü
+
+åˆ é™¤è¡¨
+drop table tabname--è¿™æ˜¯å°†è¡¨è¿åŒè¡¨ä¸­ä¿¡æ¯ä¸€èµ·åˆ é™¤ä½†æ˜¯æ—¥å¿—æ–‡ä»¶ä¸­ä¼šæœ‰è®°å½•
+
+åˆ é™¤ä¿¡æ¯
+delete from table_name-è¿™æ˜¯å°†è¡¨ä¸­ä¿¡æ¯åˆ é™¤ä½†æ˜¯ä¼šä¿ç•™è¿™ä¸ªè¡¨
+
+å¢åŠ åˆ—
+Alter table table_name add column_name column_type [default é»˜è®¤å€¼]--åœ¨è¡¨ä¸­å¢åŠ ä¸€åˆ—ï¼Œ[]å†…çš„å†…å®¹ä¸ºå¯é€‰é¡¹
+
+åˆ é™¤åˆ—
+Alter table table_name drop column column_name--ä»è¡¨ä¸­åˆ é™¤ä¸€åˆ—
+
+æ·»åŠ ä¸»é”®
 Alter table tabname add primary key(col)
-ËµÃ÷£ºÉ¾³ıÖ÷¼ü£ºAlter table tabname drop primary key(col)
-´´½¨Ë÷Òı
-create [unique] index idxname on tabname(col¡­¡£)
-É¾³ıË÷Òı£ºdrop index idxname on tabname
-×¢£ºË÷ÒıÊÇ²»¿É¸ü¸ÄµÄ£¬Ïë¸ü¸Ä±ØĞëÉ¾³ıÖØĞÂ½¨¡£
-´´½¨ÊÓÍ¼
+è¯´æ˜ï¼šåˆ é™¤ä¸»é”®ï¼šAlter table tabname drop primary key(col)
+
+åˆ›å»ºç´¢å¼•
+create [unique] index idxname on tabname(colâ€¦ã€‚)
+åˆ é™¤ç´¢å¼•ï¼šdrop index idxname on tabname
+æ³¨ï¼šç´¢å¼•æ˜¯ä¸å¯æ›´æ”¹çš„ï¼Œæƒ³æ›´æ”¹å¿…é¡»åˆ é™¤é‡æ–°å»ºã€‚
+
+åˆ›å»ºè§†å›¾
 create view viewname as select statement
-É¾³ıÊÓÍ¼£ºdrop view viewname
-»ù±¾Óï¾ä
-(1) Êı¾İ¼ÇÂ¼É¸Ñ¡£º
-sql="select * from Êı¾İ±í where×Ö¶ÎÃû=×Ö¶ÎÖµ order by×Ö¶ÎÃû[desc]"£¨°´Ä³¸ö×Ö¶ÎÖµ½µĞòÅÅÁĞ¡£Ä¬ÈÏÉıĞòASC£©
-sql="select * from Êı¾İ±í where×Ö¶ÎÃûlike '%×Ö¶ÎÖµ%' order by ×Ö¶ÎÃû [desc]"
-sql="select top 10 * from Êı¾İ±í where×Ö¶ÎÃû=×Ö¶ÎÖµ order by ×Ö¶ÎÃû [desc]"
-sql="select top 10 * from Êı¾İ±í order by ×Ö¶ÎÃû [desc]"
-sql="select * from Êı¾İ±í where×Ö¶ÎÃûin ('Öµ1','Öµ2','Öµ3')"
-sql="select * from Êı¾İ±í where×Ö¶ÎÃûbetween Öµ1 and Öµ2"
-(2) ¸üĞÂÊı¾İ¼ÇÂ¼£º
-sql="update Êı¾İ±í set×Ö¶ÎÃû=×Ö¶ÎÖµ where Ìõ¼ş±í´ïÊ½"
-sql="update Êı¾İ±í set ×Ö¶Î1=Öµ1,×Ö¶Î2=Öµ2 ¡­¡­ ×Ö¶În=Öµn where Ìõ¼ş±í´ïÊ½"
-(3) É¾³ıÊı¾İ¼ÇÂ¼£º
-sql="delete from Êı¾İ±í where Ìõ¼ş±í´ïÊ½"
-sql="delete from Êı¾İ±í" (½«Êı¾İ±íËùÓĞ¼ÇÂ¼É¾³ı)
-(4) Ìí¼ÓÊı¾İ¼ÇÂ¼£º
-sql="insert into Êı¾İ±í (×Ö¶Î1,×Ö¶Î2,×Ö¶Î3 ¡­) values (Öµ1,Öµ2,Öµ3 ¡­)"
-sql="insert into Ä¿±êÊı¾İ±í select * from Ô´Êı¾İ±í" (°ÑÔ´Êı¾İ±íµÄ¼ÇÂ¼Ìí¼Óµ½Ä¿±êÊı¾İ±í)
-(5) Êı¾İ¼ÇÂ¼Í³¼Æº¯Êı£º
-AVG(×Ö¶ÎÃû) µÃ³öÒ»¸ö±í¸ñÀ¸Æ½¾ùÖµ
-COUNT(*;×Ö¶ÎÃû) ¶ÔÊı¾İĞĞÊıµÄÍ³¼Æ»ò¶ÔÄ³Ò»À¸ÓĞÖµµÄÊı¾İĞĞÊıÍ³¼Æ
-MAX(×Ö¶ÎÃû) È¡µÃÒ»¸ö±í¸ñÀ¸×î´óµÄÖµ
-MIN(×Ö¶ÎÃû) È¡µÃÒ»¸ö±í¸ñÀ¸×îĞ¡µÄÖµ
-SUM(×Ö¶ÎÃû) °ÑÊı¾İÀ¸µÄÖµÏà¼Ó
-ÒıÓÃÒÔÉÏº¯ÊıµÄ·½·¨£º
-sql="select sum(×Ö¶ÎÃû) as ±ğÃû from Êı¾İ±í where Ìõ¼ş±í´ïÊ½"
+åˆ é™¤è§†å›¾ï¼šdrop view viewname
+
+åŸºæœ¬è¯­å¥
+(1) æ•°æ®è®°å½•ç­›é€‰ï¼š
+sql="select * from æ•°æ®è¡¨ whereå­—æ®µå=å­—æ®µå€¼ order byå­—æ®µå[desc]"ï¼ˆæŒ‰æŸä¸ªå­—æ®µå€¼é™åºæ’åˆ—ã€‚é»˜è®¤å‡åºASCï¼‰
+sql="select * from æ•°æ®è¡¨ whereå­—æ®µålike '%å­—æ®µå€¼%' order by å­—æ®µå [desc]"
+sql="select top 10 * from æ•°æ®è¡¨ whereå­—æ®µå=å­—æ®µå€¼ order by å­—æ®µå [desc]"
+sql="select top 10 * from æ•°æ®è¡¨ order by å­—æ®µå [desc]"
+sql="select * from æ•°æ®è¡¨ whereå­—æ®µåin ('å€¼1','å€¼2','å€¼3')"
+sql="select * from æ•°æ®è¡¨ whereå­—æ®µåbetween å€¼1 and å€¼2"
+
+(2) æ›´æ–°æ•°æ®è®°å½•ï¼š
+sql="update æ•°æ®è¡¨ setå­—æ®µå=å­—æ®µå€¼ where æ¡ä»¶è¡¨è¾¾å¼"
+sql="update æ•°æ®è¡¨ set å­—æ®µ1=å€¼1,å­—æ®µ2=å€¼2 â€¦â€¦ å­—æ®µn=å€¼n where æ¡ä»¶è¡¨è¾¾å¼"
+
+(3) åˆ é™¤æ•°æ®è®°å½•ï¼š
+sql="delete from æ•°æ®è¡¨ where æ¡ä»¶è¡¨è¾¾å¼"
+sql="delete from æ•°æ®è¡¨" (å°†æ•°æ®è¡¨æ‰€æœ‰è®°å½•åˆ é™¤)
+
+(4) æ·»åŠ æ•°æ®è®°å½•ï¼š
+sql="insert into æ•°æ®è¡¨ (å­—æ®µ1,å­—æ®µ2,å­—æ®µ3 â€¦) values (å€¼1,å€¼2,å€¼3 â€¦)"
+sql="insert into ç›®æ ‡æ•°æ®è¡¨ select * from æºæ•°æ®è¡¨" (æŠŠæºæ•°æ®è¡¨çš„è®°å½•æ·»åŠ åˆ°ç›®æ ‡æ•°æ®è¡¨)
+
+(5) æ•°æ®è®°å½•ç»Ÿè®¡å‡½æ•°ï¼š
+AVG(å­—æ®µå) å¾—å‡ºä¸€ä¸ªè¡¨æ ¼æ å¹³å‡å€¼
+COUNT(*;å­—æ®µå) å¯¹æ•°æ®è¡Œæ•°çš„ç»Ÿè®¡æˆ–å¯¹æŸä¸€æ æœ‰å€¼çš„æ•°æ®è¡Œæ•°ç»Ÿè®¡
+MAX(å­—æ®µå) å–å¾—ä¸€ä¸ªè¡¨æ ¼æ æœ€å¤§çš„å€¼
+MIN(å­—æ®µå) å–å¾—ä¸€ä¸ªè¡¨æ ¼æ æœ€å°çš„å€¼
+SUM(å­—æ®µå) æŠŠæ•°æ®æ çš„å€¼ç›¸åŠ 
+å¼•ç”¨ä»¥ä¸Šå‡½æ•°çš„æ–¹æ³•ï¼š
+sql="select sum(å­—æ®µå) as åˆ«å from æ•°æ®è¡¨ where æ¡ä»¶è¡¨è¾¾å¼"
 set rs=conn.excute(sql)
-ÓÃ rs("±ğÃû") »ñÈ¡Í³¼ÆµÄÖµ£¬ÆäËüº¯ÊıÔËÓÃÍ¬ÉÏ¡£
-²éÑ¯È¥³ıÖØ¸´Öµ£ºselect distinct * from table1
-(6) Êı¾İ±íµÄ½¨Á¢ºÍÉ¾³ı£º
-CREATE TABLE Êı¾İ±íÃû³Æ(×Ö¶Î1 ÀàĞÍ1(³¤¶È),×Ö¶Î2 ÀàĞÍ2(³¤¶È) ¡­¡­ )
-(7) µ¥ÁĞÇóºÍ:
-SELECT SUM(×Ö¶ÎÃû) FROM Êı¾İ±í
-×îĞÂÓï¾ä±à¼­
-²éÑ¯Êı¾İ¿âÖĞº¬ÓĞÍ¬Ò»Õâ×Ö¶ÎµÄ±í£º
+ç”¨ rs("åˆ«å") è·å–ç»Ÿè®¡çš„å€¼ï¼Œå…¶å®ƒå‡½æ•°è¿ç”¨åŒä¸Šã€‚
+æŸ¥è¯¢å»é™¤é‡å¤å€¼ï¼šselect distinct * from table1
+
+(6) æ•°æ®è¡¨çš„å»ºç«‹å’Œåˆ é™¤ï¼š
+CREATE TABLE æ•°æ®è¡¨åç§°(å­—æ®µ1 ç±»å‹1(é•¿åº¦),å­—æ®µ2 ç±»å‹2(é•¿åº¦) â€¦â€¦ )
+
+(7) å•åˆ—æ±‚å’Œ:
+SELECT SUM(å­—æ®µå) FROM æ•°æ®è¡¨
+æœ€æ–°è¯­å¥ç¼–è¾‘
+æŸ¥è¯¢æ•°æ®åº“ä¸­å«æœ‰åŒä¸€è¿™å­—æ®µçš„è¡¨ï¼š
 select name from sysobjects where xtype = 'u' and id in(select id from syscolumns where name = 's3')
-¸ù¾İ³öÉúÈÕÆÚ¿ÉÒÔËã³öÄêÁä£º
-select datediff(year,scrq,'2013') as ÄêÁä from page_shsjgrgl
-¸ù¾İµ±Ç°Äê·İ×Ô¶¯Ëã³öÄêÁä
+æ ¹æ®å‡ºç”Ÿæ—¥æœŸå¯ä»¥ç®—å‡ºå¹´é¾„ï¼š
+select datediff(year,scrq,'2013') as å¹´é¾„ from page_shsjgrgl
+æ ¹æ®å½“å‰å¹´ä»½è‡ªåŠ¨ç®—å‡ºå¹´é¾„
 select datediff(year,csny,cast(YEAR(GETDATE()) as char))
-Äê
+å¹´
 select year(djsj) from page_shsjgrgl
-ÔÂ
+æœˆ
 select month(djsj) from page_shsjgrgl
-ÈÕ
+æ—¥
 select day(djsj) from page_shsjgrgl
-ÔÚÍ¬Ò»Êı¾İ¿âÖĞ¸´ÖÆ±í½á¹¹£º
+
+åœ¨åŒä¸€æ•°æ®åº“ä¸­å¤åˆ¶è¡¨ç»“æ„ï¼š
 select * into a from b where 1<>1
-µ± IDENTITY_INSERT ÉèÖÃÎª OFF Ê±£¬²»ÄÜÎª±í 'aa' ÖĞµÄ±êÊ¶ÁĞ²åÈëÏÔÊ½Öµ¡£
-set identity_insert aa ON----ÉèÖÃ´ò¿ª£¬
-ÅúÁ¿²åÈë£º
+å½“ IDENTITY_INSERT è®¾ç½®ä¸º OFF æ—¶ï¼Œä¸èƒ½ä¸ºè¡¨ 'aa' ä¸­çš„æ ‡è¯†åˆ—æ’å…¥æ˜¾å¼å€¼ã€‚
+set identity_insert aa ON----è®¾ç½®æ‰“å¼€ï¼Œ
+
+æ‰¹é‡æ’å…¥ï¼š
 insert into aa(Customer_ID, ID_Type, ID_Number) select Customer_ID, ID_Type, ID_Number from TCustomer;
-set identity_insert aa OFF£­£­£­¹Ø±Õ
-²»Í¬Êı¾İ¿âÖ®¼äµÄ¸´ÖÆ£º
-¸´ÖÆ½á¹¹£º
+set identity_insert aa OFFï¼ï¼ï¼å…³é—­
+
+ä¸åŒæ•°æ®åº“ä¹‹é—´çš„å¤åˆ¶ï¼š
+å¤åˆ¶ç»“æ„ï¼š
 select * into test.dbo.b from GCRT.dbo.page_shsjgrgl where 1<>1
-¸´ÖÆÄÚÈİ£º
+
+å¤åˆ¶å†…å®¹ï¼š
 insert into test.dbo.b(xm,ssdq) select xm,ssdq from GCRT.dbo.page_shsjgrgl
-²é¿´Êı¾İ¿âÖĞËùÓĞµÄÊı¾İ±í±íÃû£º
+
+æŸ¥çœ‹æ•°æ®åº“ä¸­æ‰€æœ‰çš„æ•°æ®è¡¨è¡¨åï¼š
 select name from SysObjects where type='u'
-²é¿´Êı¾İ¿âÖĞËùÓĞ±íº¬ÓĞÍ¬Ò»×Ö¶ÎµÄ±í£º
-select name from sysobjects where xtype = 'u' and id in(select id from syscolumns where name = 'Í¬Ò»×Ö¶Î')
-²é¿´Êı¾İ±íÖĞµÄËùÓĞ×Ö¶Î£º
-select name from Syscolumns where id=object_id('±íÃû')
-²éÑ¯Êı¾İ¿âÊ±Ç°10Ìõ¼ÇÂ¼£º
+
+æŸ¥çœ‹æ•°æ®åº“ä¸­æ‰€æœ‰è¡¨å«æœ‰åŒä¸€å­—æ®µçš„è¡¨ï¼š
+select name from sysobjects where xtype = 'u' and id in(select id from syscolumns where name = 'åŒä¸€å­—æ®µ')
+
+æŸ¥çœ‹æ•°æ®è¡¨ä¸­çš„æ‰€æœ‰å­—æ®µï¼š
+select name from Syscolumns where id=object_id('è¡¨å')
+
+æŸ¥è¯¢æ•°æ®åº“æ—¶å‰10æ¡è®°å½•ï¼š
 select top 10 * from td_areacode order by newid()
-ĞŞ¸Ä×Ö¶ÎÀàĞÍ£º
-ALTER TABLE ±íÃû ALTER COLUMN ×Ö¶ÎÃû varchar(30) NOT NULL
+
+ä¿®æ”¹å­—æ®µç±»å‹ï¼š
+ALTER TABLE è¡¨å ALTER COLUMN å­—æ®µå varchar(30) NOT NULL
 use ZHJIANGJGYL
 declare @temp nvarchar(30)
 set @temp = 'ZWI4'
@@ -143,150 +169,177 @@ select * from TD_Code where page_en='page_yljg_zyry' and B2='ZWI'
 ) s where s.b1 !=
 case @temp when '' then '' else @temp end
 )
-¸ü¸ÄÊı¾İ¿â±í×Ö¶ÎÀàĞÍ£º
+
+æ›´æ”¹æ•°æ®åº“è¡¨å­—æ®µç±»å‹ï¼š
 alter table page_shsjgrgl alter column s1 int
-¸ß¼¶²éÑ¯
-A£ºUNIONÔËËã·û
-UNION ÔËËã·ûÍ¨¹ı×éºÏÆäËûÁ½¸ö½á¹û±í£¨ÀıÈçTABLE1 ºÍTABLE2£©²¢ÏûÈ¥±íÖĞÈÎºÎÖØ¸´ĞĞ¶øÅÉÉú³öÒ»¸ö½á¹û±í¡£µ± ALL ËæUNION Ò»ÆğÊ¹ÓÃÊ±£¨¼´UNION ALL£©£¬²»Ïû³ıÖØ¸´ĞĞ¡£Á½ÖÖÇé¿öÏÂ£¬ÅÉÉú±íµÄÃ¿Ò»ĞĞ²»ÊÇÀ´×ÔTABLE1 ¾ÍÊÇÀ´×ÔTABLE2¡£
-B£º EXCEPTÔËËã·û
-EXCEPT ÔËËã·ûÍ¨¹ı°üÀ¨ËùÓĞÔÚTABLE1 ÖĞµ«²»ÔÚTABLE2 ÖĞµÄĞĞ²¢Ïû³ıËùÓĞÖØ¸´ĞĞ¶øÅÉÉú³öÒ»¸ö½á¹û±í¡£µ±ALL ËæEXCEPT Ò»ÆğÊ¹ÓÃÊ±(EXCEPT ALL)£¬²»Ïû³ıÖØ¸´ĞĞ¡£
-C£ºINTERSECTÔËËã·û
-INTERSECT ÔËËã·ûÍ¨¹ıÖ»°üÀ¨TABLE1 ºÍTABLE2 ÖĞ¶¼ÓĞµÄĞĞ²¢Ïû³ıËùÓĞÖØ¸´ĞĞ¶øÅÉÉú³öÒ»¸ö½á¹û±í¡£µ±ALL ËæINTERSECT Ò»ÆğÊ¹ÓÃÊ±(INTERSECT ALL)£¬²»Ïû³ıÖØ¸´ĞĞ¡£
-×¢£ºÊ¹ÓÃÔËËã´ÊµÄ¼¸¸ö²éÑ¯½á¹ûĞĞ±ØĞëÊÇÒ»ÖÂµÄ¡£
-ÍâÁ¬½Ó
-A¡¢left outer join£º
-×óÍâÁ¬½Ó£¨×óÁ¬½Ó£©£º½á¹û¼¯¼È°üÀ¨Á¬½Ó±íµÄÆ¥ÅäĞĞ£¬Ò²°üÀ¨×óÁ¬½Ó±íµÄËùÓĞĞĞ¡£
+é«˜çº§æŸ¥è¯¢
+Aï¼šUNIONè¿ç®—ç¬¦
+UNION è¿ç®—ç¬¦é€šè¿‡ç»„åˆå…¶ä»–ä¸¤ä¸ªç»“æœè¡¨ï¼ˆä¾‹å¦‚TABLE1 å’ŒTABLE2ï¼‰å¹¶æ¶ˆå»è¡¨ä¸­ä»»ä½•é‡å¤è¡Œè€Œæ´¾ç”Ÿå‡ºä¸€ä¸ªç»“æœè¡¨ã€‚å½“ ALL éšUNION ä¸€èµ·ä½¿ç”¨æ—¶ï¼ˆå³UNION ALLï¼‰ï¼Œä¸æ¶ˆé™¤é‡å¤è¡Œã€‚ä¸¤ç§æƒ…å†µä¸‹ï¼Œæ´¾ç”Ÿè¡¨çš„æ¯ä¸€è¡Œä¸æ˜¯æ¥è‡ªTABLE1 å°±æ˜¯æ¥è‡ªTABLE2ã€‚
+Bï¼š EXCEPTè¿ç®—ç¬¦
+EXCEPT è¿ç®—ç¬¦é€šè¿‡åŒ…æ‹¬æ‰€æœ‰åœ¨TABLE1 ä¸­ä½†ä¸åœ¨TABLE2 ä¸­çš„è¡Œå¹¶æ¶ˆé™¤æ‰€æœ‰é‡å¤è¡Œè€Œæ´¾ç”Ÿå‡ºä¸€ä¸ªç»“æœè¡¨ã€‚å½“ALL éšEXCEPT ä¸€èµ·ä½¿ç”¨æ—¶(EXCEPT ALL)ï¼Œä¸æ¶ˆé™¤é‡å¤è¡Œã€‚
+Cï¼šINTERSECTè¿ç®—ç¬¦
+INTERSECT è¿ç®—ç¬¦é€šè¿‡åªåŒ…æ‹¬TABLE1 å’ŒTABLE2 ä¸­éƒ½æœ‰çš„è¡Œå¹¶æ¶ˆé™¤æ‰€æœ‰é‡å¤è¡Œè€Œæ´¾ç”Ÿå‡ºä¸€ä¸ªç»“æœè¡¨ã€‚å½“ALL éšINTERSECT ä¸€èµ·ä½¿ç”¨æ—¶(INTERSECT ALL)ï¼Œä¸æ¶ˆé™¤é‡å¤è¡Œã€‚
+æ³¨ï¼šä½¿ç”¨è¿ç®—è¯çš„å‡ ä¸ªæŸ¥è¯¢ç»“æœè¡Œå¿…é¡»æ˜¯ä¸€è‡´çš„ã€‚
+
+å¤–è¿æ¥
+Aã€left outer joinï¼š
+å·¦å¤–è¿æ¥ï¼ˆå·¦è¿æ¥ï¼‰ï¼šç»“æœé›†æ—¢åŒ…æ‹¬è¿æ¥è¡¨çš„åŒ¹é…è¡Œï¼Œä¹ŸåŒ…æ‹¬å·¦è¿æ¥è¡¨çš„æ‰€æœ‰è¡Œã€‚
 SQL: select a.a, a.b, a.c, b.c, b.d, b.f from a LEFT OUT JOIN b ON a.a = b.c
-B£ºright outer join:
-ÓÒÍâÁ¬½Ó(ÓÒÁ¬½Ó)£º½á¹û¼¯¼È°üÀ¨Á¬½Ó±íµÄÆ¥ÅäÁ¬½ÓĞĞ£¬Ò²°üÀ¨ÓÒÁ¬½Ó±íµÄËùÓĞĞĞ¡£
-C£ºfull outer join£º
-È«ÍâÁ¬½Ó£º²»½ö°üÀ¨·ûºÅÁ¬½Ó±íµÄÆ¥ÅäĞĞ£¬»¹°üÀ¨Á½¸öÁ¬½Ó±íÖĞµÄËùÓĞ¼ÇÂ¼¡£
-ÅĞ¶Ï¶ÔÏó±à¼­
-ÅĞ¶ÏÊı¾İ¿âÊÇ·ñ´æÔÚ
-if exists (select*fromsysdatabaseswherename= 'Êı¾İ¿âÃû')
-dropdatabase[Êı¾İ¿âÃû]
-ÅĞ¶Ï±íÊÇ·ñ´æÔÚ
-if not exists (select * from sysobjects where [name] = '±íÃû' and xtype='U')
+Bï¼šright outer join:
+å³å¤–è¿æ¥(å³è¿æ¥)ï¼šç»“æœé›†æ—¢åŒ…æ‹¬è¿æ¥è¡¨çš„åŒ¹é…è¿æ¥è¡Œï¼Œä¹ŸåŒ…æ‹¬å³è¿æ¥è¡¨çš„æ‰€æœ‰è¡Œã€‚
+Cï¼šfull outer joinï¼š
+å…¨å¤–è¿æ¥ï¼šä¸ä»…åŒ…æ‹¬ç¬¦å·è¿æ¥è¡¨çš„åŒ¹é…è¡Œï¼Œè¿˜åŒ…æ‹¬ä¸¤ä¸ªè¿æ¥è¡¨ä¸­çš„æ‰€æœ‰è®°å½•ã€‚
+
+åˆ¤æ–­å¯¹è±¡ç¼–è¾‘
+åˆ¤æ–­æ•°æ®åº“æ˜¯å¦å­˜åœ¨
+if exists (select*fromsysdatabaseswherename= 'æ•°æ®åº“å')
+dropdatabase[æ•°æ®åº“å]
+åˆ¤æ–­è¡¨æ˜¯å¦å­˜åœ¨
+if not exists (select * from sysobjects where [name] = 'è¡¨å' and xtype='U')
 begin
---ÕâÀï´´½¨±í
+--è¿™é‡Œåˆ›å»ºè¡¨
 end
-ÅĞ¶Ï´æ´¢¹ı³ÌÊÇ·ñ´æÔÚ
-if exists (select*fromsysobjectswhereid = object_id(N'[´æ´¢¹ı³ÌÃû]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
-dropprocedure[´æ´¢¹ı³ÌÃû]
-ÅĞ¶ÏÁÙÊ±±íÊÇ·ñ´æÔÚ
-if object_id('tempdb..#ÁÙÊ±±íÃû')isnot null
-droptable#ÁÙÊ±±íÃû
-ÅĞ¶ÏÊÓÍ¼ÊÇ·ñ´æÔÚ
+
+åˆ¤æ–­å­˜å‚¨è¿‡ç¨‹æ˜¯å¦å­˜åœ¨
+if exists (select*fromsysobjectswhereid = object_id(N'[å­˜å‚¨è¿‡ç¨‹å]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+dropprocedure[å­˜å‚¨è¿‡ç¨‹å]
+
+åˆ¤æ–­ä¸´æ—¶è¡¨æ˜¯å¦å­˜åœ¨
+if object_id('tempdb..#ä¸´æ—¶è¡¨å')isnot null
+droptable#ä¸´æ—¶è¡¨å
+
+åˆ¤æ–­è§†å›¾æ˜¯å¦å­˜åœ¨
 --SQL Server 2000
-IF EXISTS (SELECT*FROMsysviewsWHEREobject_id = '[dbo].[ÊÓÍ¼Ãû]'
+IF EXISTS (SELECT*FROMsysviewsWHEREobject_id = '[dbo].[è§†å›¾å]'
 --SQL Server 2005
-IF EXISTS (SELECT*FROMsys.viewsWHEREobject_id = '[dbo].[ÊÓÍ¼Ãû]'
-ÅĞ¶Ïº¯ÊıÊÇ·ñ´æÔÚ
-if exists (select*fromdbo.sysobjectswhereid = object_id(N'[dbo].[º¯ÊıÃû]') and xtype in (N'FN', N'IF', N'TF'))
-dropfunction[dbo].[º¯ÊıÃû]
-»ñÈ¡´´½¨ĞÅÏ¢
+IF EXISTS (SELECT*FROMsys.viewsWHEREobject_id = '[dbo].[è§†å›¾å]'
+
+åˆ¤æ–­å‡½æ•°æ˜¯å¦å­˜åœ¨
+if exists (select*fromdbo.sysobjectswhereid = object_id(N'[dbo].[å‡½æ•°å]') and xtype in (N'FN', N'IF', N'TF'))
+dropfunction[dbo].[å‡½æ•°å]
+
+è·å–åˆ›å»ºä¿¡æ¯
 SELECT[name],[id],crdateFROMsysobjectswherextype='U'
 /*
-xtype µÄ±íÊ¾²ÎÊıÀàĞÍ£¬Í¨³£°üÀ¨ÈçÏÂÕâĞ© C =CHECKÔ¼Êø D = Ä¬ÈÏÖµ»òDEFAULTÔ¼Êø F =FOREIGNKEYÔ¼Êø L =ÈÕÖ¾FN =±êÁ¿º¯ÊıIF = ÄÚÇ¶±íº¯Êı P =´æ´¢¹ı³ÌPK =PRIMARYKEYÔ¼Êø£¨ÀàĞÍÊÇK£© RF = ¸´ÖÆÉ¸Ñ¡´æ´¢¹ı³Ì S = ÏµÍ³±í TF = ±íº¯Êı TR =´¥·¢Æ÷U = ÓÃ»§±í UQ =UNIQUEÔ¼Êø£¨ÀàĞÍÊÇK£© V = ÊÓÍ¼ X = À©Õ¹´æ´¢¹ı³Ì */
-ÅĞ¶ÏÁĞÊÇ·ñ´æÔÚ
-if exists(select*fromsyscolumnswhereid=object_id('±íÃû') andname='ÁĞÃû')
-altertable±íÃûdropcolumnÁĞÃû
-ÅĞ¶ÏÁĞÊÇ·ñ×ÔÔöÁĞ
+xtype çš„è¡¨ç¤ºå‚æ•°ç±»å‹ï¼Œé€šå¸¸åŒ…æ‹¬å¦‚ä¸‹è¿™äº› C =CHECKçº¦æŸ D = é»˜è®¤å€¼æˆ–DEFAULTçº¦æŸ F =FOREIGNKEYçº¦æŸ L =æ—¥å¿—FN =æ ‡é‡å‡½æ•°IF = å†…åµŒè¡¨å‡½æ•° P =å­˜å‚¨è¿‡ç¨‹PK =PRIMARYKEYçº¦æŸï¼ˆç±»å‹æ˜¯Kï¼‰ RF = å¤åˆ¶ç­›é€‰å­˜å‚¨è¿‡ç¨‹ S = ç³»ç»Ÿè¡¨ TF = è¡¨å‡½æ•° TR =è§¦å‘å™¨U = ç”¨æˆ·è¡¨ UQ =UNIQUEçº¦æŸï¼ˆç±»å‹æ˜¯Kï¼‰ V = è§†å›¾ X = æ‰©å±•å­˜å‚¨è¿‡ç¨‹ */
+
+åˆ¤æ–­åˆ—æ˜¯å¦å­˜åœ¨
+if exists(select*fromsyscolumnswhereid=object_id('è¡¨å') andname='åˆ—å')
+altertableè¡¨ådropcolumnåˆ—å
+
+åˆ¤æ–­åˆ—æ˜¯å¦è‡ªå¢åˆ—
 if columnproperty(object_id('table'),'col','IsIdentity')=1
-print '×ÔÔöÁĞ'
+
+print 'è‡ªå¢åˆ—'
 else
-print '²»ÊÇ×ÔÔöÁĞ'
-SELECT*FROMsys.columnsWHEREobject_id=OBJECT_ID('±íÃû')
+print 'ä¸æ˜¯è‡ªå¢åˆ—'
+SELECT*FROMsys.columnsWHEREobject_id=OBJECT_ID('è¡¨å')
 AND is_identity=1
-ÅĞ¶Ï±íÖĞÊÇ·ñ´æÔÚË÷Òı
-if exists(select*fromsysindexeswhereid=object_id('±íÃû') andname='Ë÷ÒıÃû')
-print '´æÔÚ'
+
+åˆ¤æ–­è¡¨ä¸­æ˜¯å¦å­˜åœ¨ç´¢å¼•
+if exists(select*fromsysindexeswhereid=object_id('è¡¨å') andname='ç´¢å¼•å')
+print 'å­˜åœ¨'
 else
-print '²»´æÔÚ
-²é¿´Êı¾İ¿âÖĞ¶ÔÏó
-SELECT*FROMsysobjectsWHEREname='¶ÔÏóÃû'
-select * from table£¨ËùÒª²éÑ¯µÄ±íÃû£© where coloum(Ìõ¼ş)
-ÌáÉı±à¼­
-¸´ÖÆ±í
-(Ö»¸´ÖÆ½á¹¹£¬Ô´±íÃû£ºa ĞÂ±íÃû£ºb) (Access¿ÉÓÃ)
-·¨Ò»£ºselect * into b from a where 1<>1
-·¨¶ş£ºselect top 0 * into b from a
-¿½±´±í
-(¿½±´Êı¾İ,Ô´±íÃû£ºa Ä¿±ê±íÃû£ºb) (Access¿ÉÓÃ)
+print 'ä¸å­˜åœ¨
+
+æŸ¥çœ‹æ•°æ®åº“ä¸­å¯¹è±¡
+SELECT*FROMsysobjectsWHEREname='å¯¹è±¡å'
+select * from tableï¼ˆæ‰€è¦æŸ¥è¯¢çš„è¡¨åï¼‰ where coloum(æ¡ä»¶)
+
+æå‡ç¼–è¾‘
+å¤åˆ¶è¡¨
+(åªå¤åˆ¶ç»“æ„ï¼Œæºè¡¨åï¼ša æ–°è¡¨åï¼šb) (Accesså¯ç”¨)
+æ³•ä¸€ï¼šselect * into b from a where 1<>1
+æ³•äºŒï¼šselect top 0 * into b from a
+æ‹·è´è¡¨
+(æ‹·è´æ•°æ®,æºè¡¨åï¼ša ç›®æ ‡è¡¨åï¼šb) (Accesså¯ç”¨)
 insert into b(x, y, z) select d,e,f from a;
-¿çÊı¾İ¿âÖ®¼ä±íµÄ¿½±´
-(¾ßÌåÊı¾İÊ¹ÓÃ¾ø¶ÔÂ·¾¶) (Access¿ÉÓÃ)
-insert into b(x, y, z) select d,e,f from a in ¡®¾ßÌåÊı¾İ¿â¡¯ where Ìõ¼ş
-Àı×Ó£º¡£.from b in '"&Server.MapPath("."&"\data.mdb" &"' where..
-×Ó²éÑ¯
-(±íÃû1£ºa ±íÃû2£ºb)
-select a,b,c from a where a IN (select d from b »òÕß£º select a,b,c from a where a IN (1,2,3)
-ÏÔÊ¾ÎÄÕÂ×îºóÊ±¼ä
+
+è·¨æ•°æ®åº“ä¹‹é—´è¡¨çš„æ‹·è´
+(å…·ä½“æ•°æ®ä½¿ç”¨ç»å¯¹è·¯å¾„) (Accesså¯ç”¨)
+insert into b(x, y, z) select d,e,f from a in â€˜å…·ä½“æ•°æ®åº“â€™ where æ¡ä»¶
+ä¾‹å­ï¼šã€‚.from b in '"&Server.MapPath("."&"\data.mdb" &"' where..
+
+å­æŸ¥è¯¢
+(è¡¨å1ï¼ša è¡¨å2ï¼šb)
+select a,b,c from a where a IN (select d from b æˆ–è€…ï¼š select a,b,c from a where a IN (1,2,3)
+
+æ˜¾ç¤ºæ–‡ç« æœ€åæ—¶é—´
 select a.title,a.username,b.adddate from table a,(select max(adddate) adddate from table where table.title=a.title) b
-ÍâÁ¬½Ó²éÑ¯
-(±íÃû1£ºa ±íÃû2£ºb)
+å¤–è¿æ¥æŸ¥è¯¢
+(è¡¨å1ï¼ša è¡¨å2ï¼šb)
 select a.a, a.b, a.c, b.c, b.d, b.f from a LEFT OUT JOIN b ON a.a = b.c
-ÔÚÏßÊÓÍ¼²éÑ¯
-(±íÃû1£ºa
+
+åœ¨çº¿è§†å›¾æŸ¥è¯¢
+(è¡¨å1ï¼ša
 select * from (Select a,b,c FROM a) T where t.a > 1;
-betweenµÄÓÃ·¨
-betweenÎª²éÑ¯Ä³×Ö¶ÎµÄÖ¸¶¨·¶Î§£¬ÏŞÖÆ²éÑ¯Êı¾İ·¶Î§Ê±°üÀ¨ÁË±ß½çÖµ£¬not between²»°üÀ¨±ß½çÖµ
+betweençš„ç”¨æ³•
+betweenä¸ºæŸ¥è¯¢æŸå­—æ®µçš„æŒ‡å®šèŒƒå›´ï¼Œé™åˆ¶æŸ¥è¯¢æ•°æ®èŒƒå›´æ—¶åŒ…æ‹¬äº†è¾¹ç•Œå€¼ï¼Œnot betweenä¸åŒ…æ‹¬è¾¹ç•Œå€¼
 select * from table1 where time between time1 and time2
-select a,b,c, from table1 where a not between ÊıÖµ1 and ÊıÖµ2
-in µÄÊ¹ÓÃ·½·¨
-select * from table1 where a [not] in (¡®Öµ1¡¯£¬¡¯Öµ2¡¯,¡¯Öµ4¡¯£¬¡¯Öµ6¡¯)
-É¾³ıÖ÷±íÃ»ÓĞµÄĞÅÏ¢
-Á½ÕÅ¹ØÁª±ídelete from table1 where not exists ( select * from table2 where table1.field1=table2.field1
-ËÄ±íÁª²éÎÊÌâ
+select a,b,c, from table1 where a not between æ•°å€¼1 and æ•°å€¼2
+in çš„ä½¿ç”¨æ–¹æ³•
+select * from table1 where a [not] in (â€˜å€¼1â€™ï¼Œâ€™å€¼2â€™,â€™å€¼4â€™ï¼Œâ€™å€¼6â€™)
+åˆ é™¤ä¸»è¡¨æ²¡æœ‰çš„ä¿¡æ¯
+ä¸¤å¼ å…³è”è¡¨delete from table1 where not exists ( select * from table2 where table1.field1=table2.field1
+
+å››è¡¨è”æŸ¥é—®é¢˜
 select * from a left inner join b on a.a=b.b right inner join c on a.a=c.c inner join d on a.a=d.d where .....
-ÈÕ³Ì°²ÅÅÌáÇ°Îå·ÖÖÓ
-SQL: select * from ÈÕ³Ì°²ÅÅ where datediff('minute',f¿ªÊ¼Ê±¼ä£¬getdate())>5
-Ò»Ìõsql ¸ã¶¨Êı¾İ¿âÒ³
-select top 10 b.* from (select top 20 Ö÷¼ü×Ö¶Î,ÅÅĞò×Ö¶Î from ±íÃû order by ÅÅĞò×Ö¶Î desc) a,±íÃû b where b.Ö÷¼ü×Ö¶Î= a.Ö÷¼ü×Ö¶Î order by a.ÅÅĞò×Ö¶Î
-Ç°10Ìõ¼ÇÂ¼
-select top 10 * from table1 where ·¶Î§
-Ñ¡ÔñÅÅÃû
-Ñ¡ÔñÔÚÃ¿Ò»×ébÖµÏàÍ¬µÄÊı¾İÖĞ¶ÔÓ¦µÄa×î´óµÄ¼ÇÂ¼µÄËùÓĞĞÅÏ¢(ÀàËÆÕâÑùµÄÓÃ·¨¿ÉÒÔÓÃÓÚÂÛÌ³Ã¿ÔÂÅÅĞĞ°ñ£¬Ã¿ÔÂÈÈÏú²úÆ··ÖÎö,°´¿ÆÄ¿³É¼¨ÅÅÃû£¬µÈµÈ¡£)
+
+æ—¥ç¨‹å®‰æ’æå‰äº”åˆ†é’Ÿ
+SQL: select * from æ—¥ç¨‹å®‰æ’ where datediff('minute',få¼€å§‹æ—¶é—´ï¼Œgetdate())>5
+
+ä¸€æ¡sql æå®šæ•°æ®åº“é¡µ
+select top 10 b.* from (select top 20 ä¸»é”®å­—æ®µ,æ’åºå­—æ®µ from è¡¨å order by æ’åºå­—æ®µ desc) a,è¡¨å b where b.ä¸»é”®å­—æ®µ= a.ä¸»é”®å­—æ®µ order by a.æ’åºå­—æ®µ
+å‰10æ¡è®°å½•
+select top 10 * from table1 where èŒƒå›´
+
+é€‰æ‹©æ’å
+é€‰æ‹©åœ¨æ¯ä¸€ç»„bå€¼ç›¸åŒçš„æ•°æ®ä¸­å¯¹åº”çš„aæœ€å¤§çš„è®°å½•çš„æ‰€æœ‰ä¿¡æ¯(ç±»ä¼¼è¿™æ ·çš„ç”¨æ³•å¯ä»¥ç”¨äºè®ºå›æ¯æœˆæ’è¡Œæ¦œï¼Œæ¯æœˆçƒ­é”€äº§å“åˆ†æ,æŒ‰ç§‘ç›®æˆç»©æ’åï¼Œç­‰ç­‰ã€‚)
 select a,b,c from tablename ta where a=(select max(a) from tablename tb where tb.b=ta.b)
-ÅÉÉú½á¹û±í
-°üÀ¨ËùÓĞÔÚTableA ÖĞµ«²»ÔÚTableBºÍTableC ÖĞµÄĞĞ²¢Ïû³ıËùÓĞÖØ¸´ĞĞ¶øÅÉÉú³öÒ»¸ö½á¹û±í
+æ´¾ç”Ÿç»“æœè¡¨
+åŒ…æ‹¬æ‰€æœ‰åœ¨TableA ä¸­ä½†ä¸åœ¨TableBå’ŒTableC ä¸­çš„è¡Œå¹¶æ¶ˆé™¤æ‰€æœ‰é‡å¤è¡Œè€Œæ´¾ç”Ÿå‡ºä¸€ä¸ªç»“æœè¡¨
 (select a from tableA except (select a from tableB) except (select a from tableC)
-Ëæ»úÈ¡³ö10ÌõÊı¾İ
+éšæœºå–å‡º10æ¡æ•°æ®
 select top 10 * from tablename order by newid()
-Ëæ»úÑ¡Ôñ¼ÇÂ¼
+
+éšæœºé€‰æ‹©è®°å½•
 select newid()
-É¾³ıÖØ¸´¼ÇÂ¼
+
+åˆ é™¤é‡å¤è®°å½•
 Delete from tablename where id not in (select max(id) from tablename group by col1,col2,...)
-ÁĞ³öÊı¾İ¿âÀïµÄ±íÃû
+
+åˆ—å‡ºæ•°æ®åº“é‡Œçš„è¡¨å
 select name from sysobjects where type='U'
-ÁĞ³ö±íÀïµÄËùÓĞµÄ
+
+åˆ—å‡ºè¡¨é‡Œçš„æ‰€æœ‰çš„
 select name from syscolumns where id=object_id('TableName')
-ÁĞÊ¾ÅÅÁĞ
-ÁĞÊ¾type¡¢vender¡¢pcs×Ö¶Î£¬ÒÔtype×Ö¶ÎÅÅÁĞ£¬case¿ÉÒÔ·½±ãµØÊµÏÖ¶àÖØÑ¡Ôñ£¬ÀàËÆselect ÖĞµÄcase¡£
+
+åˆ—ç¤ºæ’åˆ—
+åˆ—ç¤ºtypeã€venderã€pcså­—æ®µï¼Œä»¥typeå­—æ®µæ’åˆ—ï¼Œcaseå¯ä»¥æ–¹ä¾¿åœ°å®ç°å¤šé‡é€‰æ‹©ï¼Œç±»ä¼¼select ä¸­çš„caseã€‚
 select type,sum(case vender when 'A' then pcs else 0 end),sum(case vender when 'C' then pcs else 0 end),sum(case vender when 'B' then pcs else 0 end) FROM tablename group by type
-ÏÔÊ¾½á¹û£º
+æ˜¾ç¤ºç»“æœï¼š
 type vender pcs
-µçÄÔA 1
-µçÄÔA 1
-¹âÅÌB 2
-¹âÅÌA 2
-ÊÖ»úB 3
-ÊÖ»úC 3
-³õÊ¼»¯±ítable1
+ç”µè„‘A 1
+ç”µè„‘A 1
+å…‰ç›˜B 2
+å…‰ç›˜A 2
+æ‰‹æœºB 3
+æ‰‹æœºC 3
+åˆå§‹åŒ–è¡¨table1
 TRUNCATE TABLE table1
-Ñ¡Ôñ´Ó10µ½15µÄ¼ÇÂ¼
-select top 5 * from (select top10 * from (select top 15 * from table order by id asc) table_±ğÃû order by id desc) table_2 order by id
-Êı¾İÀàĞÍ×ª»»
+é€‰æ‹©ä»10åˆ°15çš„è®°å½•
+select top 5 * from (select top10 * from (select top 15 * from table order by id asc) table_åˆ«å order by id desc) table_2 order by id
+æ•°æ®ç±»å‹è½¬æ¢
 declare @numid int
 declare @id varchar(50)
 set @numid=2005
 set @id=convert(varchar,@numid)
-Í¨¹ıÉÏÊöÓï¾äÍê³ÉÊı¾İÀàĞÍInt×ª»»³Évarchar£¬ÆäËû×ª»»ÀàËÆ£¬¿É²Î¿´convertº¯Êı
-¼¼ÇÉ±à¼­
-1=1£¬1=2µÄÊ¹ÓÃ
-ÔÚSQLÓï¾ä×éºÏÊ±ÓÃµÄ½Ï¶à
-¡°where 1=1¡±ÊÇ±íÊ¾Ñ¡ÔñÈ«²¿ ¡°where 1=2¡±È«²¿²»Ñ¡£¬
-Èç£º
+é€šè¿‡ä¸Šè¿°è¯­å¥å®Œæˆæ•°æ®ç±»å‹Intè½¬æ¢æˆvarcharï¼Œå…¶ä»–è½¬æ¢ç±»ä¼¼ï¼Œå¯å‚çœ‹convertå‡½æ•°
+æŠ€å·§ç¼–è¾‘
+1=1ï¼Œ1=2çš„ä½¿ç”¨
+åœ¨SQLè¯­å¥ç»„åˆæ—¶ç”¨çš„è¾ƒå¤š
+â€œwhere 1=1â€æ˜¯è¡¨ç¤ºé€‰æ‹©å…¨éƒ¨ â€œwhere 1=2â€å…¨éƒ¨ä¸é€‰ï¼Œ
+å¦‚ï¼š
 if @strWhere !='
 begin
 set @strSQL = 'select count(*) as Total from [' + @tblName + '] where ' + @strWhere
@@ -295,40 +348,45 @@ else
 begin
 set @strSQL = 'select count(*) as Total from [' + @tblName + ']'
 end
-ÎÒÃÇ¿ÉÒÔÖ±½ÓĞ´³É
+æˆ‘ä»¬å¯ä»¥ç›´æ¥å†™æˆ
 set @strSQL='select count(*) as Total from tablename where 1+1'
 if(@strWhere!='')
-{set @strSQL=@strSQL+¡¯and¡¯+strWhere}
-ÊÕËõÊı¾İ¿â
---ÖØ½¨Ë÷Òı
+{set @strSQL=@strSQL+â€™andâ€™+strWhere}
+æ”¶ç¼©æ•°æ®åº“
+
+--é‡å»ºç´¢å¼•
 DBCC REINDEX
 DBCC INDEXDEFRAG
---ÊÕËõÊı¾İºÍÈÕÖ¾
+
+--æ”¶ç¼©æ•°æ®å’Œæ—¥å¿—
 DBCC SHRINKDB
 DBCC SHRINKFILE
-Ñ¹ËõÊı¾İ¿â
+
+å‹ç¼©æ•°æ®åº“
 dbcc shrinkdatabase(dbname)
-×ªÒÆÊı¾İ¿â¸øĞÂÓÃ»§ÒÔÒÑ´æÔÚÓÃ»§È¨ÏŞ
+è½¬ç§»æ•°æ®åº“ç»™æ–°ç”¨æˆ·ä»¥å·²å­˜åœ¨ç”¨æˆ·æƒé™
 exec sp_change_users_login 'update_one','newname','oldname'
 go
-¼ì²é±¸·İ¼¯
+æ£€æŸ¥å¤‡ä»½é›†
 RESTORE VERIFYONLY from disk='E:\dvbbs.bak'
-ĞŞ¸´Êı¾İ¿â
+
+ä¿®å¤æ•°æ®åº“
 Alter DATABASE [dvbbs] SET SINGLE_USER
 GO
 DBCC CHECKDB('dvbbs',repair_allow_data_loss) WITH TABLOCK
 GO
 Alter DATABASE [dvbbs] SET MULTI_USER
 GO
-ÈÕÖ¾Çå³ı
+
+æ—¥å¿—æ¸…é™¤
 SET NOCOUNT ON
 DECLARE @LogicalFileName sysname,
 @MaxMinutes INT,
 @NewSize INT
-USE tablename -- Òª²Ù×÷µÄÊı¾İ¿âÃû
-Select @LogicalFileName = 'tablename_log', --ÈÕÖ¾ÎÄ¼şÃû
+USE tablename -- è¦æ“ä½œçš„æ•°æ®åº“å
+Select @LogicalFileName = 'tablename_log', --æ—¥å¿—æ–‡ä»¶å
 @MaxMinutes = 10, -- Limit on time allowed to wrap log.
-@NewSize = 1 -- ÄãÏëÉè¶¨µÄÈÕÖ¾ÎÄ¼şµÄ´óĞ¡(M)
+@NewSize = 1 -- ä½ æƒ³è®¾å®šçš„æ—¥å¿—æ–‡ä»¶çš„å¤§å°(M)
 -- Setup / initialize
 DECLARE @OriginalSize int
 Select @OriginalSize = size
@@ -369,9 +427,10 @@ FROM sysfiles
 Where name = @LogicalFileName
 Drop TABLE DummyTrans
 SET NOCOUNT OFF
-¸ü¸ÄÄ³¸ö±í
+
+æ›´æ”¹æŸä¸ªè¡¨
 exec sp_changeobjectowner 'tablename','dbo'
-´æ´¢¸ü¸ÄÈ«²¿±í
+å­˜å‚¨æ›´æ”¹å…¨éƒ¨è¡¨
 Create PROCEDURE dbo.User_ChangeObjectOwnerBatch
 @OldOwner as NVARCHAR(128),
 @NewOwner as NVARCHAR(128)
@@ -400,7 +459,8 @@ END
 close curObject
 deallocate curObject
 GO
-Ñ­»·Ğ´ÈëÊı¾İ
+
+å¾ªç¯å†™å…¥æ•°æ®
 declare @i int
 set @i=1
 while @i<30
