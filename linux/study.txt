@@ -1,505 +1,505 @@
-��� 
+真棒 
 
-ʲô��һ������б���    ����ָ��    ����һ���б�    Twitter     ��ֽ
-
-
-֧���ҵĹ�����һ���Awesome��Ŀ�Ϳ�Դ
+什么是一个真棒列表？    贡献指南    创建一个列表    Twitter     贴纸
 
 
-ֻ������awesome.re��������ҵĲ��ͣ�����Twitter�Ϲ�ע�ҡ�
+支持我的工作与一般的Awesome项目和开源
 
 
-����
+只需输入awesome.re这里。看看我的博客，并在Twitter上关注我。
 
-ƽ̨
-�������
-ǰ�˿���
-��˿���
-�������ѧ
-������
-����
-ͼ��
-����
-�Ĳ�
-��������
-����
-���ݿ�
-ý��
-ѧϰ
-��ȫ
-���ݹ���ϵͳ
-Ӳ��
-��ҵ
-����
-����
-��ɢ��ϵͳ
-��
-ƽ̨
 
-Node.js - ��Chrome��V8 JavaScript�����Ϲ�����JavaScript����ʱ��
-ǰ�˿���
-iOS - ������Apple�ֻ���ƽ����Ե��ƶ�����ϵͳ��
-Android��
-�������ͻ��Ӧ�ó���
-���� - ʹ��JavaScript / HTML / CSS�Ŀ�ƽ̨ԭ������Ӧ�ó���
-Cordova - ���Ӧ�ó����JavaScript API��
-��Ӧ����
-Xamarin - �ƶ�Ӧ�ó��򿪷�IDE�����Ժͷַ���
-Linux��
-��װ��
-ƻ��ϵͳ
-������
-����
-watchOS - Apple Watch�Ĳ���ϵͳ��
+内容
+
+平台
+编程语言
+前端开发
+后端开发
+计算机科学
+大数据
+理论
+图书
+编者
+开发环境
+娱乐
+数据库
+媒体
+学习
+安全
+内容管理系统
+硬件
+商业
+工作
+联网
+分散的系统
+杂
+平台
+
+Node.js - 在Chrome的V8 JavaScript引擎上构建的JavaScript运行时。
+前端开发
+iOS - 适用于Apple手机和平板电脑的移动操作系统。
+Android的
+物联网和混合应用程序
+electron - 使用JavaScript / HTML / CSS的跨平台原生桌面应用程序。
+Cordova - 混合应用程序的JavaScript API。
+反应本机
+Xamarin - 移动应用程序开发IDE，测试和分发。
+Linux的
+集装箱
+苹果系统
+命令行
+屏保
+watchOS - Apple Watch的操作系统。
 JVM
-���۶���
-����ѷ�������
-�Ӵ�
-IPFS - P2P��ý��Э�顣
-����˿ - �ƶ��������ߡ�
-Heroku - ��ƽ̨������
-��ݮ�� - ���ÿ���С�ļ����ּ�ڽ̺��ӱ�̣����ܹ����ࡣ
-Qt - ��ƽ̨��GUIӦ�ó����ܡ�
-WebExtensions - �����������չϵͳ��
-RubyMotion - ��Ruby��ΪiOS��Android��macOS��tvOS��watchOS��д��ƽ̨�ı���Ӧ�ó���
-���ܵ��� - Ϊ��ͬ�ĵ���ƽ̨����Ӧ�ó���
-GNOME - ������Linux�ļ򵥣��������ǵ����滷����
-�������
+销售队伍
+亚马逊网络服务
+视窗
+IPFS - P2P超媒体协议。
+保险丝 - 移动开发工具。
+Heroku - 云平台即服务。
+树莓派 - 信用卡大小的计算机旨在教孩子编程，但能够更多。
+Qt - 跨平台的GUI应用程序框架。
+WebExtensions - 跨浏览器的扩展系统。
+RubyMotion - 在Ruby中为iOS，Android，macOS，tvOS和watchOS编写跨平台的本地应用程序。
+智能电视 - 为不同的电视平台创建应用程序。
+GNOME - 适用于Linux的简单，无忧无虑的桌面环境。
+编程语言
 
-JavaScript��
-��ŵ
-��׼��� - ���ָ�Ϻ����ޡ�
-����ۿ���̸
-��ʾ
-�����
-΢��NPM��
-���Ŀ�ѧnpm������ - ���ڵĲ����ܵ�̽����Ŀ��
-ά��ģ�� - ����npm��װ��
-npm - ����������
-AVA - ���������ߡ�
-ESLint - Linter��
-����ʽ���
-�۲�
-npm�ű� - ����ת�֡�
-Ѹ��
-����
-���ֳ�
-����
-Asyncio - Python 3�е��첽I / O��
-��ѧ��Ƶ - ��Ƶ/���ֿ�ѧ�о���
-��
-��˹�˶�
+JavaScript的
+承诺
+标准风格 - 风格指南和棉绒。
+必须观看会谈
+提示
+网络层
+微型NPM包
+疯狂的科学npm软件包 - 存在的不可能的探测项目。
+维护模块 - 用于npm包装。
+npm - 包管理器。
+AVA - 测试赛跑者。
+ESLint - Linter。
+函数式编程
+观测
+npm脚本 - 任务转轮。
+迅速
+教育
+游乐场
+蟒蛇
+Asyncio - Python 3中的异步I / O。
+科学音频 - 音频/音乐科学研究。
+锈
+哈斯克尔
 PureScript
-��
-˹����
-�챦ʯ
-�
-Clojure��
+走
+斯卡拉
+红宝石
+活动
+Clojure的
 ClojureScript
-��
-����
-������
-�����
+酏
+榆树
+二郎神
+朱莉娅
 LUA
 C
 C / C ++
 [R
 d
 Common Lisp
-Perl��
-Groovy��
-��
-Java��
+Perl的
+Groovy的
+镖
+Java的
 RxJava
-������
-OCaml��
-ColdFusion��
-Fortran����
-����
-����
+科特林
+OCaml的
+ColdFusion的
+Fortran语言
+。净
+核心
 PHP
-������ - ��װ������
-�¶���
-���
-AutoHotkey��
-AutoIt��
-ˮ��
-Frege - Haskell��JVM��
-CMake - ���������Ժʹ��������
-ActionScript 3 - ����Adobe AIR������������ԡ�
-Eta - ����JVM�ĺ���ʽ������ԡ�
-Idris - ������Haskell��MLӰ����������͵�ͨ�ô�����������ԡ�
-ǰ�˿���
+作曲家 - 包装经理。
+德尔福
+汇编
+AutoHotkey的
+AutoIt的
+水晶
+Frege - Haskell的JVM。
+CMake - 构建，测试和打包软件。
+ActionScript 3 - 面向Adobe AIR的面向对象语言。
+Eta - 用于JVM的函数式编程语言。
+Idris - 具有受Haskell和ML影响的依赖类型的通用纯函数编程语言。
+前端开发
 
-ES6����
-Web�����Ż�
-���繤��
+ES6工具
+Web性能优化
+网络工具
 CSS
-�ؼ�·������
-����չ��
-����ۿ���̸
+关键路径工具
+可扩展性
+必须观看会谈
 Protips
-React - Ӧ�ó����ܡ�
-�м� - ��������������ReactӦ�ó���Ŀ�ܡ�
-Web���
-Polymer - ����Web�����JavaScript�⡣
-Angular - Ӧ�ó����ܡ�
-�Ǹ� - Ӧ�ó����ܡ�
-HTML5 - ������վ������Ӧ�ó���ı�����ԡ�
-SVG - ����XML��ʸ��ͼ���ʽ��
-����
+React - 应用程序框架。
+中继 - 构建数据驱动的React应用程序的框架。
+Web组件
+Polymer - 开发Web组件的JavaScript库。
+Angular - 应用程序框架。
+骨干 - 应用程序框架。
+HTML5 - 用于网站和网络应用程序的标记语言。
+SVG - 基于XML的矢量图像格式。
+帆布
 KnockoutJS
-Dojo���߰�
-���
-Ember - Ӧ�ó����ܡ�
-Android�û�����
+Dojo工具包
+灵感
+Ember - 应用程序框架。
+Android用户界面
 iOS UI
-����
+流星
 BEM
-Flexbox��
-Webӡˢ��
-Web�ɷ�����
-�������
-D3 - �������ɶ�̬����ʽ���ݿ��ӻ��Ŀ⡣
-�����ʼ�
-jQuery - ����ʹ�õ�JavaScript�����DOM������
-��ʾ
-������Ƶ
-���ߵ�һ
-��̬��վ����
-A-Frame VR - ��ҳ�������������ʵ��
-Cycle.js - �����Ժͷ�Ӧ�Ե�JavaScript��ܡ�
-�ı��༭
-�˶�UI���
-Vue.js - Ӧ�ó����ܡ�
-Marionette.js - Ӧ�ó����ܡ�
-Aurelia - Ӧ�ó����ܡ�
-��ͼ
-���ӿ��2
+Flexbox的
+Web印刷术
+Web可访问性
+材料设计
+D3 - 用于生成动态交互式数据可视化的库。
+电子邮件
+jQuery - 易于使用的JavaScript库进行DOM操作。
+提示
+网络音频
+离线第一
+静态网站服务
+A-Frame VR - 网页浏览器的虚拟现实。
+Cycle.js - 功能性和反应性的JavaScript框架。
+文本编辑
+运动UI设计
+Vue.js - 应用程序框架。
+Marionette.js - 应用程序框架。
+Aurelia - 应用程序框架。
+制图
+离子框架2
 Chrome DevTools
-PostCSS - CSS���ߡ�
-Draft.js - React�ĸ��ı��༭����ܡ�
-������Ա
-������WebӦ�ó���
-choo - Ӧ�ÿ�ܡ�
-Redux - ����JavaScriptӦ�ó����״̬������
-webpack - ģ��������
-Browserify - ģ��������
-Sass - CSSԤ��������
-Ant Design - ��ҵ��UI������ԡ�
-�� - CSSԤ��������
-WebGL - ������Ⱦ3Dͼ�ε�JavaScript API��
-Preact - Ӧ�ó����ܡ�
-����ʽ��ǿ
-Next.js - ���������ֵ�ReactӦ�ó���Ŀ�ܡ�
-Hyperapp - ���ڹ���WebӦ�ó����Tiny JavaScript�⡣
-��˿���
+PostCSS - CSS工具。
+Draft.js - React的富文本编辑器框架。
+服务人员
+渐进的Web应用程序
+choo - 应用框架。
+Redux - 用于JavaScript应用程序的状态容器。
+webpack - 模块打包器。
+Browserify - 模块打包器。
+Sass - CSS预处理器。
+Ant Design - 企业级UI设计语言。
+少 - CSS预处理器。
+WebGL - 用于渲染3D图形的JavaScript API。
+Preact - 应用程序框架。
+渐进式增强
+Next.js - 服务器呈现的React应用程序的框架。
+Hyperapp - 用于构建Web应用程序的Tiny JavaScript库。
+后端开发
 
-Django��
-��ƿ
-���˹���
-���˺�
-������
-Play1���
-CakePHP - PHP��ܡ�
-Symfony��
-����
-Laravel - PHP��ܡ�
-����
-Rails - Ruby��WebӦ�ó����ܡ�
-��ʯ - ����
-����
-���õ�.htaccessƬ��
-nginx - Web��������
+Django的
+烧瓶
+搬运工人
+流浪汉
+金字塔
+Play1框架
+CakePHP - PHP框架。
+Symfony的
+教育
+Laravel - PHP框架。
+教育
+Rails - Ruby的Web应用程序框架。
+宝石 - 包。
+尔康
+有用的.htaccess片段
+nginx - Web服务器。
 Dropwizard
 Kubernetes
-����
-�޷��������
-Apache Wicket - Java webӦ�ó����ܡ�
-Vert.x - ������JVM�Ϲ�����ӦʽӦ�ó���Ĺ��߰���
-Terraform - ���������ĺͰ汾�������ܹ��Ĺ��ߡ�
-�������ѧ
+流明
+无服务器框架
+Apache Wicket - Java web应用程序框架。
+Vert.x - 用于在JVM上构建反应式应用程序的工具包。
+Terraform - 构建，更改和版本化基础架构的工具。
+计算机科学
 
-��ѧ�γ�
-���ݿ�ѧ
-�̳�
-����ѧϰ
-�̳�
-ML with Ruby - ʹ��Rubyѧϰ��ʵʩ��Ӧ�û���ѧϰ��
-����MLģ�� - ƻ������ѧϰ��ܵ�ģ�͡�
-��������Ȼ���Դ���
-��������
-��Ruby��NLP
-����ѧ
-����
-������Ӿ�
-���ѧϰ - �����硣
-TensorFlow - �������ܿ⡣
-���� - �����������ѧϰ���ġ�
-����
-��Զ����Ұ
-��Դ����ѧ
-����ʽ���
-��̬�����ʹ�������
-��Ϣ���� - ѧϰ�����Լ����������档
-������
+大学课程
+数据科学
+教程
+机器学习
+教程
+ML with Ruby - 使用Ruby学习，实施和应用机器学习。
+核心ML模型 - 苹果机器学习框架的模型。
+言语与自然语言处理
+西班牙语
+带Ruby的NLP
+语言学
+加密
+计算机视觉
+深度学习 - 神经网络。
+TensorFlow - 机器智能库。
+论文 - 引用最多的深度学习论文。
+教育
+深远的视野
+开源社会大学
+函数式编程
+静态分析和代码质量
+信息检索 - 学习开发自己的搜索引擎。
+大数据
 
-������
-�������ݼ�
-Hadoop - �ֲ�ʽ�洢�ʹ������������ݼ��Ŀ�ܡ�
-���ݹ���
-��
-Apache Spark - ���ڴ��ģ���ݴ�����ͳһ���档
-����
+大数据
+公开数据集
+Hadoop - 分布式存储和处理超大型数据集的框架。
+数据工程
+流
+Apache Spark - 用于大规模数据处理的统一引擎。
+理论
 
-���ǰ�������
-��̸
-�㷨
-�㷨���ӻ�
-�˹�����
-���������Ż�
-�������
-��ѧ
-�ݹ鷽�� - ����Ƕ�׵����ݽṹ��
-ͼ��
+我们爱的文章
+会谈
+算法
+算法可视化
+人工智能
+搜索引擎优化
+竞争编程
+数学
+递归方案 - 遍历嵌套的数据结构。
+图书
 
-��ѱ���鼮
-�������������
-ȥ��
-R��
-ͷ�������鼮
-ͼ�鴴��
-ҩ����
-����
+免费编程书籍
+免费软件测试书
+去书
+R书
+头脑扩大书籍
+图书创作
+药剂书
+编者
 
-��ߵ��ı�
+崇高的文本
 VIM
-Emacs��
-Atom - ��Դ�Ϳ��ƽ���ı��༭����
-Visual Studio Code - ��ƽ̨�Ŀ�Դ�ı��༭����
-�Ĳ�
+Emacs的
+Atom - 开源和可破解的文本编辑器。
+Visual Studio Code - 跨平台的开源文本编辑器。
 
-��Ϸ����
-��Ϸ��̸
-Godot - ��Ϸ���档
-��Դ��Ϸ
-Unity - ��Ϸ���档
-��
-L?VE - ��Ϸ���档
-PICO-8 - �������̨��
-��Ϸ�к���չ
-����2 - ��Ϸ���档
-Gideros - ��Ϸ���档
-��������
+游戏
 
-���ٲ鿴��� - ����macOS��
-��������
-���ļ�
-����
-�� - �û��Ѻõ���ǡ�
-������Ӧ�ó���
-ZSH���
-GitHub - ΪGit�洢���ṩ�йܷ���
-�������չ
-������
-Git Cheat Sheet��Git Flow
-Git��ʾ
-Git��� - ��ǿgitCLI��
+游戏开发
+游戏会谈
+Godot - 游戏引擎。
+开源游戏
+Unity - 游戏引擎。
+棋
+L?VE - 游戏引擎。
+PICO-8 - 幻想控制台。
+游戏男孩发展
+构造2 - 游戏引擎。
+Gideros - 游戏引擎。
+开发环境
+
+快速查看插件 - 对于macOS。
+开发环境
+点文件
+贝壳
+鱼 - 用户友好的外壳。
+命令行应用程序
+ZSH插件
+GitHub - 为Git存储库提供托管服务。
+浏览器扩展
+备忘单
+Git Cheat Sheet＆Git Flow
+Git提示
+Git插件 - 增强gitCLI。
 SSH
-�����ߵ�FOSS
-����Web�����ĳ�����ƽ̨�ն�Ӧ�ó���
-PowerShell - ��ƽ̨����������shell��
-Alfred�������� - macOS��������Ӧ�ó���
-�ն��Ը�
-����
+开发者的FOSS
+基于Web技术的超级跨平台终端应用程序。
+PowerShell - 跨平台的面向对象的shell。
+Alfred工作流程 - macOS的生产力应用程序。
+终端性感
+娱乐
 
-�ƻ� - �ƻá�
-����
-����
-�����ʼ�ͨѶ
-IT����
-���ݿ�
+科幻 - 科幻。
+幻想
+播客
+电子邮件通讯
+IT行情
+数据库
 
-���ݿ�
-MySQL��
-SQLAlchemy��
+数据库
+MySQL的
+SQLAlchemy的
 InfluxDB
-Neo4j��
-MongoDB - NoSQL���ݿ⡣
+Neo4j的
+MongoDB - NoSQL数据库。
 RethinkDB
-TinkerPop - ͼ�μ����ܡ�
-PostgreSQL - �����ϵ���ݿ⡣
-CouchDB - �����ĵ���NoSQL���ݿ⡣
-HBase - �ֲ�ʽ������չ�Ĵ����ݴ洢��
-ý��
+TinkerPop - 图形计算框架。
+PostgreSQL - 对象关系数据库。
+CouchDB - 面向文档的NoSQL数据库。
+HBase - 分布式，可扩展的大数据存储。
+媒体
 
-֪ʶ����ý��
-����
-Codeface - �ı��༭�����塣
-��Ʊ��Դ
-GIF - ����ͼ���ͼ���ʽ��
-����
-��Դ�ĵ�
-��Ƶ���ӻ�
-�㲥
-�������� - ���ؼ�����������
-ѧϰ
+知识共享媒体
+字体
+Codeface - 文本编辑器字体。
+股票资源
+GIF - 动画图像的图像格式。
+音乐
+开源文档
+音频可视化
+广播
+像素艺术 - 像素级数字艺术。
+学习
 
-CLI���ֻ� - �����̡̳�
-ѧϰ���
-�뽲
-������Ƶ
-�������ѧϰ
-�������ʷ
-Ϊ���ӱ��
-������Ϸ - ѧϰʱ�档
-JavaScriptѧϰ
-��ȫ
+CLI研讨会 - 互动教程。
+学习编程
+请讲
+技术视频
+深入机器学习
+计算机历史
+为孩子编程
+教育游戏 - 学习时玩。
+JavaScript学习
+安全
 
-Ӧ�ð�ȫ
-��ȫ
-CTF - ������졣
-������������
-Android��ȫ
-�ڿ�
-�۹� - ��ƭ���壬ּ����ʹ��������ͼ�ƻ���֯�е���Ϣϵͳ��
-�¼���Ӧ
-������ȫ�������ڿ�
-���簲ȫ - ����Ӧ�úͷ���İ�ȫ��
-������Lockpicking�� - ͨ�����������������Կ����������������
-���ݹ���ϵͳ
+应用安全
+安全
+CTF - 捕获国旗。
+恶意软件分析
+Android安全
+黑客
+蜜罐 - 欺骗陷阱，旨在诱使攻击者企图破坏组织中的信息系统。
+事件响应
+车辆安全和汽车黑客
+网络安全 - 网络应用和服务的安全。
+开锁（Lockpicking） - 通过操纵其组件而不用钥匙来解锁的艺术。
+内容管理系统
 
-һ��umbraco
-������CMS - Ruby on Rails CMS��
-W - - Django CMSרע������Ժ��û����顣
-Textpattern - ����������PHP��CMS��
-Drupal - ����չ�Ļ���PHP��CMS��
-����CMS - ��������CMS��
-Ӳ��
+一把umbraco
+精炼厂CMS - Ruby on Rails CMS。
+W - - Django CMS专注于灵活性和用户体验。
+Textpattern - 基于轻量级PHP的CMS。
+Drupal - 可扩展的基于PHP的CMS。
+工艺CMS - 内容优先CMS。
+硬件
 
-������
-������
-���� - ���ڵ��ӹ���ʦ�Ͱ����ߡ�
-�����ű�
-�缪����� - �����Լ��ĵ缪�����嵥��
-��ҵ
+机器人
+物联网
+电子 - 用于电子工程师和爱好者。
+蓝牙信标
+电吉他规格 - 建立自己的电吉他的清单。
+商业
 
-���Ź�˾
-�������������ص�
-OKR���� - Ŀ���趨�͹�ͨ���ʵ����
-�쵼�͹��� - �쵼��Ա�����ڼ�����˾/�����е��ξ�����
-���� -������������ҵ��
-����
+开放公司
+发布您的启动地点
+OKR方法 - 目标设定和沟通最佳实践。
+领导和管理 - 领导人员，并在技术公司/环境中担任经理。
+独立 -独立开发的企业。
+工作
 
-��и - �Ŷ�Э����
-����
-Զ����ҵ
-������
-��������ίԱ��
-��̷�̸
-����
+松懈 - 团队协作。
+社区
+远程作业
+生产率
+利基工作委员会
+编程访谈
+联网
 
-�������������
-�������
+软件定义的网络
+网络分析
 PCAPTools
-��ɢ��ϵͳ
+分散的系统
 
-���ر� - ���رҷ���������������ߡ�
-�Ʋ� - ��Դ�ֲ�ʽ�������硣
-�ǽ��������� - �ǽ���������Ӧ�ó���
-�鹵 - ��Դ��ɢ��΢�����硣
-��
+比特币 - 比特币服务和软件开发工具。
+纹波 - 开源分布式结算网络。
+非金融区块链 - 非金融区块链应用程序。
+乳沟 - 开源分散的微博网络。
+杂
 
-JSON - �����ı������ݽ�����ʽ��
-��GeoJSON
-���ݼ�
-ѧ�������ߵ��ۿ�
-����
-ϵͳ����Ա
-���ߵ�
-��� - �ݹ�˵����
-Analytics��������
-��Ϣ
-��
-Appium - Ӧ�ó���Ĳ����Զ������ߡ�
-��������
-���񹤳�
-���Ϊ������
-������� - ��ջ�����Quora��
-Sketch - ΪmacOS��Ƶ�Ӧ�ó���
-��¯��Ŀ
-����
-����
+JSON - 基于文本的数据交换格式。
+以GeoJSON
+数据集
+学生开发者的折扣
+会议
+系统管理员
+无线电
+真棒 - 递归说明。
+Analytics（分析）
+休息
+硒
+Appium - 应用程序的测试自动化工具。
+持续交付
+服务工程
+免费为开发者
+解决方案 - 堆栈溢出，Quora等
+Sketch - 为macOS设计的应用程序。
+锅炉项目
+自述
+工具
 Styleguides
-��ƺͿ���ָ��
-�������̲���
-�����й�
-FOSS����Ӧ�ó���
-���� - ���������ߡ�
-AMA - ����ʲô��
-��
-��Դ��Ӱ
-OpenGL - ������Ⱦ2D��3Dͼ�εĿ�ƽ̨API��
+设计和开发指南
+软件工程博客
+自我托管
+FOSS生产应用程序
+吞噬 - 任务赛跑者。
+AMA - 问我什么。
+答案
+开源摄影
+OpenGL - 用于渲染2D和3D图形的跨平台API。
 GraphQL
-����
-�о�����
-���ݿ��ӻ�
-�罻ý���������
-΢����
-Unicode - Unicode��׼����񱣬������Դ��
-�����
-��ѧ���Ѻõ���Ŀ
+过境
+研究工具
+数据可视化
+社交媒体分享链接
+微服务
+Unicode - Unicode标准，怪癖，包和资源。
+代码点
+初学者友好的项目
 Katas
-�ж�����Ĺ���
-�����ѧ - ���������ͷǻ�����ѧ�ҡ�
-TAP - �����κ�Э�顣
-MQTT - ��������������Э�顣
-�ڿ͹���
-ΪŮ��
-Vorpal - Node.js CLI��ܡ�
-Vulkan - �Ϳ�������ƽ̨��3Dͼ�κͼ���API��
-�齺 - �Ű����ԡ�
-����ѧ - ����ѧ�ҵ������׼���
-��Ȥ�������ɷ���
-������Ϣѧ
-��� - ѡ�������һ����ɫ������
-Steam - ���ַ���ƽ̨��
-������ - ��������ˡ�
-�ֳ��ɿ��Թ���
-�������� - �������ƹ���฻��ͬ���ĵĹ����Ļ���
-DTrace - ��̬���ٿ�ܡ�
-�û��ű� - ��ǿ����������顣
-���汦�� - ���汦�������汦��GO��
-ChatOps - ͨ���������������ҵ�������
-���� - ����Ա��������
-����������� - ͨ����ʵ�����ӵ����Ϸ�չ��ģ�ͣ����㸴���������������������
-���������Ҹ��ټ�����
-SaltStack - ����Python�����ù���ϵͳ��
-��ҳ��� - �������������ʦ��
-JMeter - ���ز��Ժ����ܲ������ߡ�
-�����Ա��� - ��̱���Ķ����������ǹ��ܡ�
-�޵�¼WebӦ�ó��� - �����¼����ʹ�õ�WebӦ�ó���
-���� - �������ԡ�
-������� - ��ѵ����ɡ�
-��֡�� - ԭ�ͽ���ʽUI��ơ�
-Markdown - ������ԡ�
-������Ȥ - ��Ȥ�Ŀ�����Ŀ��
-�����Ļ - �����ļ�����ػ��
-ҽ�Ʊ��� - Ϊ��ʩ���ṩ�̣������̣�����ר�Һ��о���Ա�ṩ�Ŀ�Դҽ�Ʊ���������
-Magento 2 - ʹ��PHP�����Ŀ�Դ��������
-TikZ - TeX / LaTeX / ConTeXt��ͼ�λ�����������
-�񾭿�ѧ - ��ϵͳ���Ե��о���
-��Ч���������� - ��֤��Ϊ�����Ĵ�����ҵ��
-�޹�� - �޹�����Ʒ��
-Esolangs - ��������������ʵ�����ΪЦ����������ʵ��ʹ�á�
-��������˹ - ��Դ���ϵͳ��
-Homematic - ���ܼҾ��豸��
-������ - ���������Ͻ���˫���ʡ�
-Uncopyright - �����������Ʒ��
-���ܻ��ҹ��ߺ��㷨 - ���ֻ��ң����м������ڹ淶��λ�����ɺ���֤ת�ơ�
-��Ԫ�� - ����һ�����߰����ԺͶ������ĿƼ�������
-��Դ֧���� - ����ṩ��Դ��Ŀ�Ĺ��ߺͷ���Ĺ�˾��
-���ԭ�� - �������ã���һ�µ���ƺ����顣
-���ӻ��ع���� - ȷ�����Ĳ����ƻ����ܻ���
-Theravada - Theravada��̴�ͳ�Ľ̵���
-���IT - ��ԴJavaӦ�����ܹ������ߡ�
+行动主义的工具
+公民科学 - 面向社区和非机构科学家。
+TAP - 测试任何协议。
+MQTT - “物联网”连接协议。
+黑客攻击
+为女孩
+Vorpal - Node.js CLI框架。
+Vulkan - 低开销，跨平台的3D图形和计算API。
+乳胶 - 排版语言。
+经济学 - 经济学家的入门套件。
+有趣的马尔可夫链
+生物信息学
+多彩 - 选择你的下一个配色方案。
+Steam - 数字发行平台。
+机器人 - 建设机器人。
+现场可靠性工程
+工程移情 - 建立和推广更多富有同情心的工程文化。
+DTrace - 动态跟踪框架。
+用户脚本 - 增强您的浏览体验。
+神奇宝贝 - 神奇宝贝和神奇宝贝GO。
+ChatOps - 通过聊天管理技术和业务操作。
+谬误 - 程序员相信谬误。
+领域驱动设计 - 通过将实现连接到不断发展的模型，满足复杂需求的软件开发方法。
+量化的自我跟踪技术。
+SaltStack - 基于Python的配置管理系统。
+网页设计 - 适用于数字设计师。
+JMeter - 负载测试和性能测量工具。
+创造性编码 - 编程表达的东西，而不是功能。
+无登录Web应用程序 - 无需登录即可使用的Web应用程序。
+测试 - 软件测试。
+免费软件 - 免费的自由。
+成帧器 - 原型交互式UI设计。
+Markdown - 标记语言。
+开发乐趣 - 有趣的开发项目。
+荷兰的活动 - 荷兰的技术相关活动。
+医疗保健 - 为设施，提供商，开发商，政策专家和研究人员提供的开源医疗保健软件。
+Magento 2 - 使用PHP构建的开源电子商务。
+TikZ - TeX / LaTeX / ConTeXt的图形绘制软件包。
+神经科学 - 神经系统和脑的研究。
+有效的利他主义 - 以证据为动力的慈善事业。
+无广告 - 无广告替代品。
+Esolangs - 编程语言设计用于实验或作为笑话，而不是实际使用。
+普罗米修斯 - 开源监控系统。
+Homematic - 智能家居设备。
+分类帐 - 在命令行上进行双记帐。
+Uncopyright - 公有领域的作品。
+加密货币工具和算法 - 数字货币，其中加密用于规范单位的生成和验证转移。
+多元化 - 创建一个更具包容性和多样化的科技社区。
+开源支持者 - 免费提供开源项目的工具和服务的公司。
+设计原则 - 创建更好，更一致的设计和体验。
+可视化回归测试 - 确保更改不会破坏功能或风格。
+Theravada - Theravada佛教传统的教导。
+检查IT - 开源Java应用性能管理工具。

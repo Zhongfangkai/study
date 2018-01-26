@@ -1,15 +1,15 @@
-iScroll-lite.js  µ¼º½ÌõºáÏò»¬¶¯¾ÓÖĞµÄ²å¼ş
+iScroll-lite.js  å¯¼èˆªæ¡æ¨ªå‘æ»‘åŠ¨å±…ä¸­çš„æ’ä»¶
 
-²å¼şÊµÀı´úÂë
+æ’ä»¶å®ä¾‹ä»£ç 
 new IScroll(id, {
         scrollX: true,
         tap: true,
-        /*³õÊ¼»¯ÏÂ»®ÏßÎ»ÖÃ*/
+        /*åˆå§‹åŒ–ä¸‹åˆ’çº¿ä½ç½®*/
         init_line: function (self) {},
-        /*µã»÷ÊÂ¼şµÄ»Øµ÷º¯Êı*/
+        /*ç‚¹å‡»äº‹ä»¶çš„å›è°ƒå‡½æ•°*/
         callBack: function (self, target) {}
 });
 
-api-common.js   h5 »ìºÏAPP¿ª·¢¹«¹²·½·¨µÄ·â×°²å¼ş
+api-common.js   h5 æ··åˆAPPå¼€å‘å…¬å…±æ–¹æ³•çš„å°è£…æ’ä»¶
 
-two-way-DataBinding.html  	Ô­ÉújsÊµÏÖË«Ïò°ó¶¨µÄ¹¦ÄÜ
+two-way-DataBinding.html  	åŸç”Ÿjså®ç°åŒå‘ç»‘å®šçš„åŠŸèƒ½

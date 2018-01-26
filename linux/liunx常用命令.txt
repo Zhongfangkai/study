@@ -1,291 +1,291 @@
-����ָ��
+常用指令
 
-dhclient  	 �Զ���ȡ��̬ip
+dhclient  	 自动获取动态ip
 
-ls����        ��ʾ�ļ���Ŀ¼
+ls　　        显示文件或目录
 
-     -l           �г��ļ���ϸ��Ϣl(list)
+     -l           列出文件详细信息l(list)
 
-     -a          �г���ǰĿ¼�������ļ���Ŀ¼���������ص�a(all)
+     -a          列出当前目录下所有文件及目录，包括隐藏的a(all)
 
-mkdir         ����Ŀ¼
+mkdir         创建目录
 
-     -p           ����Ŀ¼�����޸�Ŀ¼���򴴽�p(parent)
+     -p           创建目录，若无父目录，则创建p(parent)
 
-cd               �л�Ŀ¼
+cd               切换目录
 
-touch          �������ļ�
+touch          创建空文件
 
-echo            �����������ݵ��ļ���
+echo            创建带有内容的文件。
 
-cat              �鿴�ļ�����
+cat              查看文件内容
 
-cp                ����
+cp                拷贝
 
-mv               �ƶ���������
+mv               移动或重命名
 
-rm               ɾ���ļ�
+rm               删除文件
 
-     -r            �ݹ�ɾ������ɾ����Ŀ¼���ļ�
+     -r            递归删除，可删除子目录及文件
 
-     -f            ǿ��ɾ��
+     -f            强制删除
 
-find              ���ļ�ϵͳ������ĳ�ļ�
+find              在文件系统中搜索某文件
 
-wc                ͳ���ı����������������ַ���
+wc                统计文本中行数、字数、字符数
 
-grep             ���ı��ļ��в���ĳ���ַ���
+grep             在文本文件中查找某个字符串
 
-rmdir           ɾ����Ŀ¼
+rmdir           删除空目录
 
-tree             ���νṹ��ʾĿ¼����Ҫ��װtree��
+tree             树形结构显示目录，需要安装tree包
 
-pwd              ��ʾ��ǰĿ¼
+pwd              显示当前目录
 
-ln                  ���������ļ�
+ln                  创建链接文件
 
-more��less  ��ҳ��ʾ�ı��ļ�����
+more、less  分页显示文本文件内容
 
-head��tail    ��ʾ�ļ�ͷ��β����
+head、tail    显示文件头、尾内容
 
-ctrl+alt+F1  ������ȫ��ģʽ
+ctrl+alt+F1  命令行全屏模式
 
- 
 
-ϵͳ��������
 
-stat              ��ʾָ���ļ�����ϸ��Ϣ����ls����ϸ
+系统管理命令
 
-who               ��ʾ���ߵ�½�û�
+stat              显示指定文件的详细信息，比ls更详细
 
-whoami          ��ʾ��ǰ�����û�
+who               显示在线登陆用户
 
-hostname      ��ʾ������
+whoami          显示当前操作用户
 
-uname           ��ʾϵͳ��Ϣ
+hostname      显示主机名
 
-top                ��̬��ʾ��ǰ�ķ���Դ��������Ϣ
+uname           显示系统信息
 
-ps                  ��ʾ˲�����״̬ ps -aux
+top                动态显示当前耗费资源最多进程信息
 
-du                  �鿴Ŀ¼��С du -h /home���е�λ��ʾĿ¼��Ϣ
+ps                  显示瞬间进程状态 ps -aux
 
-df                  �鿴���̴�С df -h ���е�λ��ʾ������Ϣ
+du                  查看目录大小 du -h /home带有单位显示目录信息
 
-ifconfig          �鿴�������
+df                  查看磁盘大小 df -h 带有单位显示磁盘信息
 
-ping                ����������ͨ
+ifconfig          查看网络情况
 
-netstat          ��ʾ����״̬��Ϣ
+ping                测试网络连通
 
-man                ��������ˣ�������  �磺man ls
+netstat          显示网络状态信息
 
-clear              ����
+man                命令不会用了，找男人  如：man ls
 
-alias               ������������ �磺alias showmeit="ps -aux" ��������ʹ��unaliax showmeit
+clear              清屏
 
-kill                 ɱ�����̣���������ps �� top����鿴���̵�id��Ȼ������kill����ɱ�����̡�
+alias               对命令重命名 如：alias showmeit="ps -aux" ，另外解除使用unaliax showmeit
 
- 
+kill                 杀死进程，可以先用ps 或 top命令查看进程的id，然后再用kill命令杀死进程。
 
-���ѹ���������
 
-gzip��
 
-bzip2��
+打包压缩相关命令
 
-tar:                ���ѹ��
+gzip：
 
-     -c              �鵵�ļ�
+bzip2：
 
-     -x              ѹ���ļ�
+tar:                打包压缩
 
-     -z              gzipѹ���ļ�
+     -c              归档文件
 
-     -j              bzip2ѹ���ļ�
+     -x              压缩文件
 
-     -v              ��ʾѹ�����ѹ������ v(view)
+     -z              gzip压缩文件
 
-     -f              ʹ�õ���
+     -j              bzip2压缩文件
 
-����
+     -v              显示压缩或解压缩过程 v(view)
 
-tar -cvf /home/abc.tar /home/abc              ֻ�������ѹ��
+     -f              使用档名
 
-tar -zcvf /home/abc.tar.gz /home/abc        ���������gzipѹ��
+例：
 
-tar -jcvf /home/abc.tar.bz2 /home/abc      ���������bzip2ѹ��
+tar -cvf /home/abc.tar /home/abc              只打包，不压缩
 
-��Ȼ��������ѹ������ֱ���滻���������  tar -cvf  / tar -zcvf  / tar -jcvf �еġ�c�� ���ɡ�x�� �Ϳ����ˡ�
+tar -zcvf /home/abc.tar.gz /home/abc        打包，并用gzip压缩
 
- 
+tar -jcvf /home/abc.tar.bz2 /home/abc      打包，并用bzip2压缩
 
-�ػ�/��������
+当然，如果想解压缩，就直接替换上面的命令  tar -cvf  / tar -zcvf  / tar -jcvf 中的“c” 换成“x” 就可以了。
+
+
+
+关机/重启机器
 
 shutdown
 
-     -r             �ػ�����
+     -r             关机重启
 
-     -h             �ػ�������
+     -h             关机不重启
 
-     now          ���̹ػ�
+     now          立刻关机
 
-halt               �ػ�
+halt               关机
 
-reboot          ����
+reboot          重启
 
- 
 
-Linux�ܵ�
 
-��һ������ı�׼�����Ϊ��һ������ı�׼���롣Ҳ���ǰѼ��������������ʹ�ã���һ���������ǰһ������Ľ����
+Linux管道
 
-����grep -r "close" /home/* | more       ��homeĿ¼�������ļ��в��ң�����close���ļ�������ҳ�����
+将一个命令的标准输出作为另一个命令的标准输入。也就是把几个命令组合起来使用，后一个命令除以前一个命令的结果。
 
- 
+例：grep -r "close" /home/* | more       在home目录下所有文件中查找，包括close的文件，并分页输出。
 
-Linux����������
 
-dpkg (Debian Package)�������ߣ�����������.deb��׺�����ַ����ʺ�ϵͳ��������������¡�
 
-���簲װtree����İ�װ�����Ƚ�tree.deb����Linuxϵͳ�С���ʹ���������װ��
+Linux软件包管理
 
-sudo dpkg -i tree_1.5.3-1_i386.deb         ��װ����
+dpkg (Debian Package)管理工具，软件包名以.deb后缀。这种方法适合系统不能联网的情况下。
 
-sudo dpkg -r tree                                     ж������
+比如安装tree命令的安装包，先将tree.deb传到Linux系统中。再使用如下命令安装。
 
- 
+sudo dpkg -i tree_1.5.3-1_i386.deb         安装软件
 
-ע����tree.deb����Linuxϵͳ�У��ж��ַ�ʽ��VMwareTool��ʹ�ù��ط�ʽ��ʹ��winSCP���ߵȣ�
+sudo dpkg -r tree                                     卸载软件
 
-APT��Advanced Packaging Tool���߼��������ߡ����ַ����ʺ�ϵͳ�ܹ����ӻ������������
 
-��Ȼ��treeΪ��
 
-sudo apt-get install tree                         ��װtree
+注：将tree.deb传到Linux系统中，有多种方式。VMwareTool，使用挂载方式；使用winSCP工具等；
 
-sudo apt-get remove tree                       ж��tree
+APT（Advanced Packaging Tool）高级软件工具。这种方法适合系统能够连接互联网的情况。
 
-sudo apt-get update                                 ��������
+依然以tree为例
 
-sudo apt-get upgrade        
+sudo apt-get install tree                         安装tree
 
- 
+sudo apt-get remove tree                       卸载tree
 
-��.rpm�ļ�תΪ.deb�ļ�
+sudo apt-get update                                 更新软件
 
-.rpmΪRedHatʹ�õ�������ʽ����Ubuntu�²���ֱ��ʹ�ã�������Ҫת��һ�¡�
+sudo apt-get upgrade
+
+
+
+将.rpm文件转为.deb文件
+
+.rpm为RedHat使用的软件格式。在Ubuntu下不能直接使用，所以需要转换一下。
 
 sudo alien abc.rpm
 
- 
 
-vimʹ��
 
-vim����ģʽ������ģʽ������ģʽ���༭ģʽ��ʹ��ESC��i�����л�ģʽ��
+vim使用
 
-����ģʽ�£�
+vim三种模式：命令模式、插入模式、编辑模式。使用ESC或i或：来切换模式。
 
-:q                      �˳�
+命令模式下：
 
-:q!                     ǿ���˳�
+:q                      退出
 
-:wq                   ���沢�˳�
+:q!                     强制退出
 
-:set number     ��ʾ�к�
+:wq                   保存并退出
 
-:set nonumber  �����к�
+:set number     显示行号
 
-/apache            ���ĵ��в���apache ��n������һ����shift+n��һ��
+:set nonumber  隐藏行号
 
-yyp                   ���ƹ�������У���ճ��
+/apache            在文档中查找apache 按n跳到下一个，shift+n上一个
 
-h(����һ���ַ���)��j(��һ�С�)��k(��һ�С�)��l(����һ���ַ���)
+yyp                   复制光标所在行，并粘贴
 
- 
+h(左移一个字符←)、j(下一行↓)、k(上一行↑)、l(右移一个字符→)
 
-�û����û������
 
-/etc/passwd    �洢�û��˺�
 
-/etc/group       �洢���˺�
+用户及用户组管理
 
-/etc/shadow    �洢�û��˺ŵ�����
+/etc/passwd    存储用户账号
 
-/etc/gshadow  �洢�û����˺ŵ�����
+/etc/group       存储组账号
 
-useradd �û���
+/etc/shadow    存储用户账号的密码
 
-userdel �û���
+/etc/gshadow  存储用户组账号的密码
 
-adduser �û���
+useradd 用户名
 
-groupadd ����
+userdel 用户名
 
-groupdel ����
+adduser 用户名
 
-passwd root     ��root��������
+groupadd 组名
+
+groupdel 组名
+
+passwd root     给root设置密码
 
 su root
 
-su - root 
+su - root
 
-/etc/profile     ϵͳ��������
+/etc/profile     系统环境变量
 
-bash_profile     �û���������
+bash_profile     用户环境变量
 
-.bashrc              �û���������
+.bashrc              用户环境变量
 
-su user              �л��û������������ļ�.bashrc
+su user              切换用户，加载配置文件.bashrc
 
-su - user            �л��û������������ļ�/etc/profile ������bash_profile
+su - user            切换用户，加载配置文件/etc/profile ，加载bash_profile
 
-�����ļ����û����û���
+更改文件的用户及用户组
 
 sudo chown [-R] owner[:group] {File|Directory}
 
-���磺����jdk-7u21-linux-i586.tar.gzΪ���������û�hadoop����hadoop
+例如：还以jdk-7u21-linux-i586.tar.gz为例。属于用户hadoop，组hadoop
 
-Ҫ���л����ļ��������û����顣����ʹ�����
+要想切换此文件所属的用户及组。可以使用命令。
 
 sudo chown root:root jdk-7u21-linux-i586.tar.gz
 
- 
-
-�ļ�Ȩ�޹���
-
-���ֻ���Ȩ��
-
-R           ��         ��ֵ��ʾΪ4
-
-W          д         ��ֵ��ʾΪ2
-
-X           ��ִ��  ��ֵ��ʾΪ1
 
 
+文件权限管理
 
-��ͼ��ʾ��jdk-7u21-linux-i586.tar.gz�ļ���Ȩ��Ϊ-rw-rw-r--
+三种基本权限
 
--rw-rw-r--һ��ʮ���ַ����ֳ��ĶΡ�
+R           读         数值表示为4
 
-��һ���ַ���-����ʾ��ͨ�ļ������λ�û����ܻ���֡�l�����ӣ���d����ʾĿ¼
+W          写         数值表示为2
 
-�ڶ����ĸ��ַ���rw-����ʾ��ǰ�����û���Ȩ�ޡ�   ��������ֵ��ʾΪ4+2=6
+X           可执行  数值表示为1
 
-�������߸��ַ���rw-����ʾ��ǰ�������Ȩ�ޡ�      ��������ֵ��ʾΪ4+2=6
 
-�ڰ˾�ʮ���ַ���r--����ʾ�����û�Ȩ�ޡ�              ��������ֵ��ʾΪ2
 
-���Բ������ļ���Ȩ������ֵ��ʾΪ662 
+如图所示，jdk-7u21-linux-i586.tar.gz文件的权限为-rw-rw-r--
 
-����Ȩ��
+-rw-rw-r--一共十个字符，分成四段。
 
-sudo chmod [u�����û�  g������  o�����û�  a�����û�]  [+����Ȩ��  -����Ȩ��]  [r  w  x]   Ŀ¼�� 
+第一个字符“-”表示普通文件；这个位置还可能会出现“l”链接；“d”表示目录
 
-���磺��һ���ļ�filename��Ȩ��Ϊ��-rw-r----x�� ,��Ȩ��ֵ��Ϊ"-rwxrw-r-x"������ֵ��ʾΪ765
+第二三四个字符“rw-”表示当前所属用户的权限。   所以用数值表示为4+2=6
+
+第五六七个字符“rw-”表示当前所属组的权限。      所以用数值表示为4+2=6
+
+第八九十个字符“r--”表示其他用户权限。              所以用数值表示为2
+
+所以操作此文件的权限用数值表示为662
+
+更改权限
+
+sudo chmod [u所属用户  g所属组  o其他用户  a所有用户]  [+增加权限  -减少权限]  [r  w  x]   目录名
+
+例如：有一个文件filename，权限为“-rw-r----x” ,将权限值改为"-rwxrw-r-x"，用数值表示为765
 
 sudo chmod u+x g+w o+r  filename
 
-��������ӿ�������ֵ��ʾ
+上面的例子可以用数值表示
 
 sudo chmod 765 filename
