@@ -11,3 +11,5 @@ new IScroll(id, {
 });
 
 api-common.js   h5 混合APP开发公共方法的封装插件
+
+two-way-DataBinding.html  	原生js实现双向绑定的功能

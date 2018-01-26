@@ -1,0 +1,111 @@
+基本快捷键：
+
+打开：Ctrl + O
+
+新建：Ctrl + N
+
+保存：Ctrl + S
+
+退出：Alt + F4
+
+打印：Ctrl + P
+
+查找：Ctrl + F
+
+替换：Ctrl + H
+
+复制：Ctrl + C
+
+剪切：Ctrl + X
+
+粘贴：Ctrl + V
+
+快速复制：Ctrl+D&点击拖拽＋Ctrl
+
+撤销：Ctrl + Z
+
+重做：Ctrl + Y
+
+全选：Ctrl + A
+
+帮助说明：F1
+
+输出快捷键：
+
+生成原型预览：F5
+
+生成规格说明：F9
+
+更多的生成器和配置选项：Crtl+F5
+
+在原型中重新生成当前页面(不弹出新窗口生成预览)：Ctrl +F8
+
+工作区域快捷键：
+
+下页：Ctrl + Tab
+
+上页：Ctrl + Shift + Tab
+
+关闭当前页：Ctrl + W
+
+垂直滚动： 鼠标滚轮
+
+横向滚动：Shift + 鼠标滚轮
+
+放大缩小：Ctrl + 鼠标滚轮
+
+页面移动：Space + 鼠标右键
+
+隐藏网格：Ctrl + ’
+
+对齐网格：Ctrl + Shift + ’
+
+隐藏全局辅助线：Ctrl + .
+
+隐藏页面辅助线：Ctrl + ,
+
+对齐辅助线：Ctrl + Shift + ,
+
+锁定辅助线：Ctrl + Alt +,
+
+控件编辑快捷键：
+
+群组：Ctrl + G
+
+取消群组：Ctrl + Shift + G
+
+上移一层：Ctrl + ]
+
+置于顶层：Ctrl +Shift + ]
+
+下移一层：Ctrl + [
+
+置于底层：Ctrl + Shift + [
+
+左对齐：Ctrl + Alt +L
+
+居中对齐：Ctrl + Alt + C
+
+右对齐：Ctrl + Alt + R
+
+顶端对齐：Ctrl + Alt + T
+
+垂直居中对齐：Ctrl + Alt + M
+
+底端对齐：Ctrl + Alt + B
+
+水平分布：Ctrl + Shift + H
+
+垂直分布：Ctrl + Shift + U
+
+减少脚注编号：Ctrl + J
+
+增加脚注编号：Ctal + Shift + J
+
+锁定位置和尺寸：Ctrl + K
+
+解锁位置和尺寸：Ctrl + Shift + K
+
+编辑位置和尺寸（6.0 以前版本）：Ctrl + L
+
+拼写检查（6.0 以前版本）：F7
