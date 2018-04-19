@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input type="text" id="test">
+<b id="b"> 双向绑定数据 封装测试 </b> <i></i></br>
+
+<p><a href="#none"></a></p>
+<p><a href="#none"></a></p>
+<p><a href="#none"></a></p>
+
+<!--<script src="yunlutong/script/jquery-3.2.1.min.js"></script>-->
+<script>
+    /**
+     * 双向绑定功能的封装函数
+     * @param input  目标输入框 string || input dom
+     * @param view   绑定数据展示的dom string || dom []
+     * @param init   绑定视图的初始值
+     * @param enterBack  触发事件的回调函数
+     * @param event   触发更新视图的事件
+     */
+    function towDataBind(input, view, init, enterBack, event) {
+        var obj = {}, key = 'key',
+            input = input.nodeName == 'INPUT' ? input : document.querySelector(input + ''),
+            view = typeof view == 'string' ? document.querySelectorAll(view) : view;
+        if (input.nodeName !== 'INPUT') {
+            return console.error('input param is not input nodeName');
+        }
+        Object.defineProperty(obj, key, {
+            get: function () {
+                return input.value;
+            },
+            set: function (newval) {
+                input.value = newval;
+                if (view.length) {
+                    for (var i = 0, len = view.length; i < len; i++) {
+                        view[i].innerText = newval;
+                    }
+                } else {
+                    view.innerText = newval;
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+        obj[key] = init !== undefined ? init : '';
+        input.addEventListener(event || 'keyup', function (e) {
+            obj[key] = e.target.value;
+            obj[key] !== '' && typeof enterBack === 'function' && (enterBack(e));
+        });
+        return Object.getOwnPropertyDescriptor(obj, key);
+    }
+    /* 函数调用 */
+    var o = towDataBind('#test', 'a', 'test', function (e) {
+        if (e.keyCode == 13) {
+            console.log(o.get());
+            o.set('你按了回车键');
+        }
+    });
+</script>
+</body>
+</html>
